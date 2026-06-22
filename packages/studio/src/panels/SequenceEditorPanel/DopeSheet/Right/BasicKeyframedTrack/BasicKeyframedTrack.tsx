@@ -69,10 +69,10 @@ const BasicKeyframedTrack: React.VFC<BasicKeyframedTracksProps> = React.memo(
 
     const snapPositions =
       snapPositionsState.mode === 'snapToSome'
-        ? snapPositionsState.positions[leaf.sheetObject.address.objectKey]?.[
+        ? (snapPositionsState.positions[leaf.sheetObject.address.objectKey]?.[
             leaf.trackId
-          ]
-        : [] ?? []
+          ] ?? [])
+        : []
 
     const snapToAllKeyframes = snapPositionsState.mode === 'snapToAll'
 

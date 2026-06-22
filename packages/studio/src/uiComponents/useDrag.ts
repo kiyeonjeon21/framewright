@@ -204,7 +204,7 @@ export default function useDrag(
           DRAG_DETECTION_DISTANCE_THRESHOLD
         ) {
           if (isPointerLockUsed) {
-            target.requestPointerLock()
+            void target.requestPointerLock()
           }
 
           stateStarted.detection = {

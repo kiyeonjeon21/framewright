@@ -32,13 +32,14 @@ const BasicSelect: React.FC<{
   // const [isOpen, setIsOpen] = useState<boolean>(false)
   const selectedValue =
     typeof props.value === 'string' ? props.value : props.defaultOption
-  const selectedLabel = props.options.find((opt) => opt.value === selectedValue)
-    ?.label
+  const selectedLabel = props.options.find(
+    (opt) => opt.value === selectedValue,
+  )?.label
 
   return (
     <Container>
       <Label>
-        <>{props.label}</>
+        <>{props.label as React.ReactNode}</>
       </Label>
       <SelectedValueLabel>
         {selectedLabel}

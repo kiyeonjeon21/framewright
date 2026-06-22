@@ -257,7 +257,11 @@ function DetailCompoundPropEditor<
                   key={'prop-' + subPropKey}
                   // @ts-ignore
                   propConfig={subPropConfig}
-                  pointerToProp={pointerToProp[subPropKey] as Pointer<$FixMe>}
+                  pointerToProp={
+                    (pointerToProp as Record<string, Pointer<$FixMe>>)[
+                      subPropKey
+                    ]
+                  }
                   obj={obj}
                 />
               )
@@ -279,7 +283,11 @@ function DetailCompoundPropEditor<
                 <DeterminePropEditorForDetail
                   key={'prop-' + subPropKey}
                   propConfig={subPropConfig}
-                  pointerToProp={pointerToProp[subPropKey] as Pointer<$FixMe>}
+                  pointerToProp={
+                    (pointerToProp as Record<string, Pointer<$FixMe>>)[
+                      subPropKey
+                    ]
+                  }
                   obj={obj}
                   visualIndentation={visualIndentation + 1}
                 />

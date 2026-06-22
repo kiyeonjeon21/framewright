@@ -168,7 +168,7 @@ export const gestureActor = basicFSM<
 
           if (totalDistanceMoved > DRAG_DETECTION_DISTANCE_THRESHOLD) {
             if (isPointerLockUsed) {
-              el.target!.requestPointerLock()
+              void el.target!.requestPointerLock()
             }
 
             const stuff = {

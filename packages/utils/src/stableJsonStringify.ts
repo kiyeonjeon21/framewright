@@ -23,6 +23,6 @@ function deepSortValue<S extends $IntentionalAny>(val: S): S {
           return result
         }, {} as any)
     : Array.isArray(val)
-    ? val.map(deepSortValue)
-    : val
+      ? (val.map(deepSortValue) as $IntentionalAny)
+      : val
 }

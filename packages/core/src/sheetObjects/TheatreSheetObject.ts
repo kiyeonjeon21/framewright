@@ -24,8 +24,7 @@ const KEEP_HOT_FOR_MS: undefined | number = 5 * 1000
 
 export default class TheatreSheetObject<
   Props extends UnknownShorthandCompoundProps = UnknownShorthandCompoundProps,
-> implements ISheetObject<Props>
-{
+> implements ISheetObject<Props> {
   get type(): 'Theatre_SheetObject_PublicAPI' {
     return 'Theatre_SheetObject_PublicAPI'
   }
@@ -37,7 +36,7 @@ export default class TheatreSheetObject<
    * @internal
    */
   constructor(internals: SheetObject) {
-    setPrivateAPI(this, internals)
+    setPrivateAPI(this as $FixMe, internals)
   }
 
   get props(): Pointer<this['value']> {
