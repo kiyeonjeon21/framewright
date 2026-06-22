@@ -23210,12 +23210,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"husky@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "husky@npm:6.0.0"
+"husky@npm:^9":
+  version: 9.1.7
+  resolution: "husky@npm:9.1.7"
   bin:
-    husky: lib/bin.js
-  checksum: db6da76a670b2cd1e967990decfd291e6f35a5aee4d362208a51771474d3b4896d526acb4bf0413c2d7154716e42a4d8b6cc19f2bb108e48d1f554624c723a00
+    husky: bin.js
+  checksum: c2412753f15695db369634ba70f50f5c0b7e5cb13b673d0826c411ec1bd9ddef08c1dad89ea154f57da2521d2605bd64308af748749b27d08c5f563bcd89975f
   languageName: node
   linkType: hard
 
@@ -37229,7 +37229,7 @@ fsevents@^1.2.7:
     eslint-plugin-tsdoc: ^0.2.17
     eslint-plugin-unused-imports: ^3.0.0
     fast-glob: ^3.3.0
-    husky: ^6.0.0
+    husky: ^9
     identity-obj-proxy: ^3.0.0
     jest: ^30
     jest-environment-jsdom: ^30

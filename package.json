@@ -18,7 +18,7 @@
     "test": "jest",
     "test:compat:install": "yarn workspace @theatre/compat-tests run install-fixtures",
     "test:compat:run": "jest --config jest.compat-tests.config.js",
-    "postinstall": "husky install && yarn workspace @theatre/app run prisma generate && yarn workspace @theatre/sync-server run prisma generate",
+    "postinstall": "husky && yarn workspace @theatre/app run prisma generate && yarn workspace @theatre/sync-server run prisma generate",
     "lint:all": "eslint . --ext ts,tsx --ignore-path=.gitignore --rulesdir ./devEnv/eslint/rules"
   },
   "lint-staged": {
@@ -47,7 +47,7 @@
     "eslint-plugin-tsdoc": "^0.2.17",
     "eslint-plugin-unused-imports": "^3.0.0",
     "fast-glob": "^3.3.0",
-    "husky": "^6.0.0",
+    "husky": "^9",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30",
     "jest-environment-jsdom": "^30",
