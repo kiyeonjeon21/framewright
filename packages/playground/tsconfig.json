@@ -2,6 +2,8 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
+    // vite 8 ships ESM-only types via "exports"; needs bundler resolution
+    "moduleResolution": "bundler",
     "lib": ["ESNext", "DOM"],
     "rootDir": ".",
     "types": ["jest", "node"],

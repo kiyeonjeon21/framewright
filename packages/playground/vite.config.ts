@@ -1,4 +1,5 @@
 import {defineConfig} from 'vite'
+import type {UserConfig} from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 import fg from 'fast-glob'
@@ -54,7 +55,7 @@ function findAppUrl() {
 }
 
 // https://vitejs.dev/config/
-const config = defineConfig(async ({command}) => {
+const config = defineConfig(async ({command}): Promise<UserConfig> => {
   const dev = command === 'serve'
   console.log('dev', dev)
 

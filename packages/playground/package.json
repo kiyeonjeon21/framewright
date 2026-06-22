@@ -10,14 +10,14 @@
   "scripts": {
     "serve": "vite",
     "serve:ci": "vite build && vite preview",
-    "build": "vite build --force",
+    "build": "vite build",
     "build:static": "echo 'building for vercel' && yarn run build",
     "typecheck": "tsc --noEmit",
     "test": "playwright test --config=devEnv/playwright.config.ts",
     "test:ci": "playwright test --reporter=dot --config=devEnv/playwright.config.ts --project=chromium"
   },
   "devDependencies": {
-    "@playwright/test": "^1.36.2",
+    "@playwright/test": "^1.61.0",
     "@react-three/drei": "^9.80.1",
     "@react-three/fiber": "^8.13.6",
     "@theatre/core": "workspace:*",
@@ -31,8 +31,8 @@
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
     "@types/styled-components": "^5.1.26",
-    "@vitejs/plugin-react": "^4.0.0",
-    "@vitejs/plugin-react-swc": "^3.3.2",
+    "@vitejs/plugin-react": "^6.0.2",
+    "@vitejs/plugin-react-swc": "^4.3.1",
     "dotenv": "^16.3.1",
     "fast-glob": "^3.3.0",
     "lodash-es": "^4.17.21",
@@ -43,6 +43,6 @@
     "theatric": "workspace:*",
     "three": "^0.155.0",
     "typescript": "5.1.6",
-    "vite": "^4.3.9"
+    "vite": "^8.0.16"
   }
 }
