@@ -19424,7 +19424,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:~0.28.0":
+"esbuild@npm:latest, esbuild@npm:~0.28.0":
   version: 0.28.1
   resolution: "esbuild@npm:0.28.1"
   dependencies:
@@ -36493,7 +36493,7 @@ fsevents@^1.2.7:
     "@typescript-eslint/eslint-plugin": ^6.21.0
     "@typescript-eslint/parser": ^6.21.0
     cross-env: ^7.0.3
-    esbuild: ^0.18.18
+    esbuild: latest
     eslint: ^8.56.0
     eslint-plugin-import: 2.29.1
     eslint-plugin-jsx-a11y: ^6.7.1
