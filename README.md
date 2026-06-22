@@ -1,3 +1,18 @@
+<!--
+  framewright — a community continuation of Theatre.js.
+  The README below is largely the original Theatre.js documentation; usage,
+  package names (@theatre/*), and links still point to upstream for now.
+-->
+
+> 🎬 **framewright** is a community continuation of
+> [Theatre.js](https://github.com/theatre-js/theatre), whose public development
+> stopped in 2024. This repository keeps the original git history and licensing
+> (Apache-2.0 for the runtime, AGPL-3.0 for the studio) and modernizes the
+> toolchain for current environments (Node 24 LTS, TypeScript 5.9, Vite 8, Jest
+> 30, esbuild 0.28). It is **not affiliated with or endorsed by** the original
+> Theatre.js team. Package names and docs still reference `@theatre/*` upstream
+> and will be rebranded over time.
+
 <h1 align="center">
   <a href="https://github.com/theatre-js/theatre#gh-dark-mode-only"><img src="https://raw.githubusercontent.com/theatre-js/theatre-docs/main/docs/.vuepress/public/public/theatrejs-logo-white.svg" alt="Theatre.js" width="200"></a><a href="https://github.com/theatre-js/theatre#gh-light-mode-only"><img src="https://raw.githubusercontent.com/theatre-js/theatre-docs/main/docs/.vuepress/public/public/theatrejs-logo-black.svg" alt="Theatre.js" width="200"></a>
 </h1>
@@ -14,7 +29,9 @@
  
 </p>
 
-> ✨ Update: Theatre.js 1.0 is around the corner. We have _temporarily_ moved development to a private repo so we can iterate faster. We'll push our work back to this public repo soon. Terms and license will remain OSS, as before. (Also, [we're hiring – join the core team!](https://www.theatrejs.com/join)).
+> ℹ️ Upstream context: in 2024 the original Theatre.js team _temporarily_ moved
+> development to a private repo to build a 1.0, and the public repo has been
+> dormant since. **framewright** continues from that last public snapshot.
 
 Theatre.js is an animation library for high-fidelity motion graphics. It is
 designed to help you express detailed animation, enabling you to create
