@@ -13,21 +13,8 @@
 > Theatre.js team. Package names and docs still reference `@theatre/*` upstream
 > and will be rebranded over time.
 
-<h1 align="center">
-  <a href="https://github.com/theatre-js/theatre#gh-dark-mode-only"><img src="https://raw.githubusercontent.com/theatre-js/theatre-docs/main/docs/.vuepress/public/public/theatrejs-logo-white.svg" alt="Theatre.js" width="200"></a><a href="https://github.com/theatre-js/theatre#gh-light-mode-only"><img src="https://raw.githubusercontent.com/theatre-js/theatre-docs/main/docs/.vuepress/public/public/theatrejs-logo-black.svg" alt="Theatre.js" width="200"></a>
-</h1>
+<h1 align="center">framewright</h1>
 <p align="center">Motion Design, for the web</p>
-<p align="center">
- <a href="#"><img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/theatre-js/theatre/main?label=build"></a>
- <a href="https://discord.gg/Tku4CJKf4B"><img src="https://img.shields.io/discord/870988717190426644?label=Discord" alt="Join us on Discord"></a>
- <a href="https://twitter.com/theatre_js">
-   <img alt="Follow Theatre.js on Twitter" src="https://img.shields.io/twitter/url?label=%40theatre_js&url=https%3A%2F%2Ftwitter.com%2Ftheatre_js">
- </a>
- <a href="https://www.youtube.com/channel/UCsp9XOCs8v2twyq5kMLzS2Q">
-  <img src="https://img.shields.io/youtube/channel/views/UCsp9XOCs8v2twyq5kMLzS2Q?label=YouTube&style=social" alt="Watch on YouTube">
- </a>
- 
-</p>
 
 > ℹ️ Upstream context: in 2024 the original Theatre.js team _temporarily_ moved
 > development to a private repo to build a 1.0, and the public repo has been
@@ -68,9 +55,11 @@ You can use Theatre.js to:
 
 ## Documentation and Tutorials
 
-The docs are at [theatrejs.com/docs](https://www.theatrejs.com/docs):
+The original Theatre.js docs are at
+[theatrejs.com/docs](https://www.theatrejs.com/docs) — the API is still
+compatible with framewright, so they remain the best reference for now.
 
-- [Video tutorials](https://www.youtube.com/channel/UCsp9XOCs8v2twyq5kMLzS2Q)
+- Video tutorials (upstream Theatre.js):
   - [Crash course](https://www.youtube.com/watch?v=icR9EIS1q34)
   - [Animating with music](https://www.youtube.com/watch?v=QoS4gMxwq_4)
   - [Yuri Artiukh](https://twitter.com/akella)'s
@@ -80,9 +69,14 @@ The docs are at [theatrejs.com/docs](https://www.theatrejs.com/docs):
 
 ## Community and support
 
-Join our friendly community on [Discord](https://discord.gg/bm9f8F9Y9N), follow
-the updates on [twitter](https://twitter.com/theatre_js) or write us an
-[email](mailto:hello@theatrejs.com).
+For framewright questions, bugs, and discussion, use the
+[GitHub Issues and Discussions](https://github.com/kiyeonjeon21/framewright/issues)
+on this repo.
+
+The original Theatre.js community channels (upstream, dormant since 2024):
+[Discord](https://discord.gg/bm9f8F9Y9N) ·
+[@theatre_js](https://twitter.com/theatre_js) ·
+[hello@theatrejs.com](mailto:hello@theatrejs.com)
 
 ## Development and contributing
 
@@ -91,28 +85,29 @@ If you want to change the source of Theatre, have a look at the guide
 
 ### Proposing fixes and changes
 
-You can always get help with bugfixes or discuss changes with our community on
-[Discord](https://discord.gg/bm9f8F9Y9N), or directly open an issue on Github.
+Open an [issue](https://github.com/kiyeonjeon21/framewright/issues) on this repo
+to report bugs or propose changes. Pull requests are welcome.
 
 ### Helping with outstanding issues
 
 Feel free to chime in on any
-[issue](https://github.com/AriaMinaei/theatre/issues). We have also labeled some
-issues with
-["Help wanted"](https://github.com/AriaMinaei/theatre/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22help+wanted%22)
+[issue](https://github.com/kiyeonjeon21/framewright/issues). Issues labeled
+["Help wanted"](https://github.com/kiyeonjeon21/framewright/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 or
-["Good first issue"](https://github.com/AriaMinaei/theatre/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22)
-if you're just getting started with the codebase.
+["Good first issue"](https://github.com/kiyeonjeon21/framewright/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+are good starting points.
 
 ### Helping with documentation
 
-The documentation website's repo is
-[here](https://github.com/theatre-js/theatre-docs/).
+The original Theatre.js documentation repo is
+[theatre-js/theatre-docs](https://github.com/theatre-js/theatre-docs/)
+(upstream, maintained by the original team). framewright-specific doc changes
+can be proposed via issues on this repo.
 
 ### Writing/recording tutorials
 
-If you make tutorials or video content about Theatre, tell us to showcase it
-here :)
+If you make tutorials or video content about framewright or Theatre.js, open an
+issue or PR to add a link here.
 
 ## License
 
