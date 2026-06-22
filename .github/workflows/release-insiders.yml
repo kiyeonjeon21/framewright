@@ -95,14 +95,14 @@ jobs:
             return pullRequest.head.sha
 
       # checkout the repo at the latest commit of the PR
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: ${{ steps.pr-ref.outputs.result }}
 
       - name: Use Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 24.x
 
       - uses: ./.github/actions/yarn-nm-install
       - name: Build the Theatre.js packages

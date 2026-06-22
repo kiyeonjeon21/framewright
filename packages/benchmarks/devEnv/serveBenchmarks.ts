@@ -1,5 +1,8 @@
 import path from 'path'
 import {definedGlobals} from '../../core/devEnv/definedGlobals'
+import {createRequire} from 'module'
+
+const require = createRequire(import.meta.url)
 
 const benchmarksDir = path.join(__dirname, '..')
 

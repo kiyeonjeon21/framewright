@@ -3,6 +3,9 @@ import type {$IntentionalAny} from '@theatre/utils/types'
 // This file gets imported by other packages who may ot have set up path aliases, so we should use relative imports here
 // eslint-disable-next-line no-relative-imports
 import {fullSchema} from '../src/envSchema'
+import {createRequire} from 'module'
+
+const require = createRequire(import.meta.url)
 
 const env: Env = {
   THEATRE_VERSION: require('../package.json').version,

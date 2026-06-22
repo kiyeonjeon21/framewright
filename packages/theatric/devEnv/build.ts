@@ -1,6 +1,9 @@
 import * as path from 'path'
 import {build} from 'esbuild'
 import type {Plugin} from 'esbuild'
+import {createRequire} from 'module'
+
+const require = createRequire(import.meta.url)
 
 const externalPlugin = (patterns: RegExp[]): Plugin => {
   return {

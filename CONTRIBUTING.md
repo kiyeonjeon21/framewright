@@ -4,11 +4,11 @@
 
 ### Setting up the environment
 
-Make sure you have [`node 14+`](https://nodejs.org/) installed:
+Make sure you have [`node 22+`](https://nodejs.org/) installed (see `.nvmrc`; node 24 LTS recommended):
 
 ```sh
 $ node -v
-> v14.0.0
+> v24.0.0
 ```
 
 and [`yarn 1.22+`](https://classic.yarnpkg.com/en/):

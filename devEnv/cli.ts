@@ -2,6 +2,9 @@ import sade from 'sade'
 import {$, fs, path, question} from '@cspotcode/zx'
 import * as core from '@actions/core'
 import * as os from 'os'
+import {createRequire} from 'module'
+
+const require = createRequire(import.meta.url)
 
 const root = path.join(__dirname, '..')
 
