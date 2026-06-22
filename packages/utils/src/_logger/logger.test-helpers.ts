@@ -34,10 +34,10 @@ function setupFn(options: ITheatreInternalLoggerOptions) {
         try {
           const message = `${kind} message`
           logger[kind](message)
-          expect(con.debug).not.toBeCalled()
-          expect(con.info).not.toBeCalled()
-          expect(con.warn).not.toBeCalled()
-          expect(con.error).not.toBeCalled()
+          expect(con.debug).not.toHaveBeenCalled()
+          expect(con.info).not.toHaveBeenCalled()
+          expect(con.warn).not.toHaveBeenCalled()
+          expect(con.error).not.toHaveBeenCalled()
         } catch (err) {
           throw new LoggerTestError(
             `Expected logger.${kind}(...) excluded from logging\n${(
@@ -55,16 +55,16 @@ function setupFn(options: ITheatreInternalLoggerOptions) {
           const message = `${kind} message`
           logger[kind](message)
           if (expectOutputted !== 'debug') {
-            expect(con.debug).not.toBeCalled()
+            expect(con.debug).not.toHaveBeenCalled()
           }
           if (expectOutputted !== 'info') {
-            expect(con.info).not.toBeCalled()
+            expect(con.info).not.toHaveBeenCalled()
           }
           if (expectOutputted !== 'warn') {
-            expect(con.warn).not.toBeCalled()
+            expect(con.warn).not.toHaveBeenCalled()
           }
           if (expectOutputted !== 'error') {
-            expect(con.error).not.toBeCalled()
+            expect(con.error).not.toHaveBeenCalled()
           }
           expectLastCalledWith(con[expectOutputted], includes)
         } catch (err) {
@@ -98,7 +98,7 @@ function expectLastCalledWith(
   fn: jest.MockInstance<any, any[]>,
   includes: TestLoggerIncludes,
 ) {
-  expect(fn).toBeCalled()
+  expect(fn).toHaveBeenCalled()
   if (includes.length > 0) {
     const [lastCall] = fn.mock.calls
     const concat = lastCall.filter(Boolean).map(String).join(', ')
@@ -157,10 +157,10 @@ function setupUtilLogger(
       try {
         const message = `${audience} ${kind} message`
         logger[kind](message)
-        expect(con.debug).not.toBeCalled()
-        expect(con.info).not.toBeCalled()
-        expect(con.warn).not.toBeCalled()
-        expect(con.error).not.toBeCalled()
+        expect(con.debug).not.toHaveBeenCalled()
+        expect(con.info).not.toHaveBeenCalled()
+        expect(con.warn).not.toHaveBeenCalled()
+        expect(con.error).not.toHaveBeenCalled()
       } catch (err) {
         throw new LoggerTestError(
           `Expected "${audience}" logger.${kind}(...) excluded from logging\n${(
@@ -178,16 +178,16 @@ function setupUtilLogger(
         const message = `${audience} ${kind} message`
         logger[kind](message)
         if (expectOutputted !== 'debug') {
-          expect(con.debug).not.toBeCalled()
+          expect(con.debug).not.toHaveBeenCalled()
         }
         if (expectOutputted !== 'info') {
-          expect(con.info).not.toBeCalled()
+          expect(con.info).not.toHaveBeenCalled()
         }
         if (expectOutputted !== 'warn') {
-          expect(con.warn).not.toBeCalled()
+          expect(con.warn).not.toHaveBeenCalled()
         }
         if (expectOutputted !== 'error') {
-          expect(con.error).not.toBeCalled()
+          expect(con.error).not.toHaveBeenCalled()
         }
         expectLastCalledWith(con[expectOutputted], includes)
       } catch (err) {

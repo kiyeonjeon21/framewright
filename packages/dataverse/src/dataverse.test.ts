@@ -91,17 +91,17 @@ describe(`The exhaustive guide to dataverse`, () => {
       // now, if we change the time of day, our listener should be called.
       state.set({...state.get(), timeOfDay: 13})
       ticker.tick()
-      expect(listener).toBeCalledTimes(1)
-      expect(listener).toBeCalledWith(`The time of day is 13`)
+      expect(listener).toHaveBeenCalledTimes(1)
+      expect(listener).toHaveBeenCalledWith(`The time of day is 13`)
 
       // and if we change the time of day again,
       state.set({...state.get(), timeOfDay: 14})
       // our listener would _not_ be called, because we haven't ticked the ticker yet.
-      expect(listener).toBeCalledTimes(1)
+      expect(listener).toHaveBeenCalledTimes(1)
       // but if we tick the ticker,
       ticker.tick()
       // our listener would be called again.
-      expect(listener).toBeCalledTimes(2)
+      expect(listener).toHaveBeenCalledTimes(2)
 
       // And that would be it for our simple program. But let's take stock of the concepts we've encountered so far.
       // 1. We've created an `Atom` to hold the state of our program.
