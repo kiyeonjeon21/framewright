@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import theatre from '@theatre/core'
-import {getProject} from '@theatre/core'
+import theatre from '@framewright/core'
+import {getProject} from '@framewright/core'
 import {Scene} from './Scene'
 /**
  * This is a basic example of using Theatre.js for manipulating the DOM.

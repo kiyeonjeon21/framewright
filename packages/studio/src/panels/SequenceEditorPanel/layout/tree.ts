@@ -3,19 +3,19 @@ import type {
   PropTypeConfig_AllSimples,
   PropTypeConfig_Compound,
   UnknownValidCompoundProps,
-} from '@theatre/core/types/public'
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
-import type {IPropPathToTrackIdTree} from '@theatre/core/sheetObjects/SheetObjectTemplate'
-import type Sheet from '@theatre/core/sheets/Sheet'
-import type {PathToProp} from '@theatre/utils/pathToProp'
-import type {StudioSheetItemKey} from '@theatre/core/types/private'
-import {createStudioSheetItemKey} from '@theatre/studio/utils/createStudioSheetItemKey'
-import type {$FixMe, $IntentionalAny} from '@theatre/core/types/public'
-import {prism, val, pointerToPrism} from '@theatre/dataverse'
-import logger from '@theatre/utils/logger'
-import {titleBarHeight} from '@theatre/studio/panels/BasePanel/common'
-import type {Studio} from '@theatre/studio/Studio'
-import type {SequenceTrackId} from '@theatre/core/types/public'
+} from '@framewright/core/types/public'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
+import type {IPropPathToTrackIdTree} from '@framewright/core/sheetObjects/SheetObjectTemplate'
+import type Sheet from '@framewright/core/sheets/Sheet'
+import type {PathToProp} from '@framewright/utils/pathToProp'
+import type {StudioSheetItemKey} from '@framewright/core/types/private'
+import {createStudioSheetItemKey} from '@framewright/studio/utils/createStudioSheetItemKey'
+import type {$FixMe, $IntentionalAny} from '@framewright/core/types/public'
+import {prism, val, pointerToPrism} from '@framewright/dataverse'
+import logger from '@framewright/utils/logger'
+import {titleBarHeight} from '@framewright/studio/panels/BasePanel/common'
+import type {Studio} from '@framewright/studio/Studio'
+import type {SequenceTrackId} from '@framewright/core/types/public'
 
 /**
  * Base "view model" for each row with common

@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import type {CSSProperties} from 'react'
-import {types} from '@theatre/core'
-import type {ISheet} from '@theatre/core'
+import {types} from '@framewright/core'
+import type {ISheet} from '@framewright/core'
 
 // Box element
 export const BoxSize = 100

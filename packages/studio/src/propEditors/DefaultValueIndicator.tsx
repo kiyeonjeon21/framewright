@@ -1,12 +1,12 @@
 import {transparentize} from 'polished'
 import React from 'react'
 import styled from 'styled-components'
-import getStudio from '@theatre/studio/getStudio'
-import type {PathToProp} from '@theatre/utils/pathToProp'
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
-import type {PropTypeConfig} from '@theatre/core/types/public'
+import getStudio from '@framewright/studio/getStudio'
+import type {PathToProp} from '@framewright/utils/pathToProp'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
+import type {PropTypeConfig} from '@framewright/core/types/public'
 import {nextPrevCursorsTheme} from './NextPrevKeyframeCursors'
-import {__private} from '@theatre/core'
+import {__private} from '@framewright/core'
 const {isPropConfigComposite, iteratePropType} = __private.propTypeUtils
 
 const theme = {

@@ -1,7 +1,7 @@
-import {isPrism, prism, val} from '@theatre/dataverse'
-import type {Prism, Pointer} from '@theatre/dataverse'
-import {usePrismInstance} from '@theatre/react'
-import type {$FixMe, $IntentionalAny} from '@theatre/core/types/public'
+import {isPrism, prism, val} from '@framewright/dataverse'
+import type {Prism, Pointer} from '@framewright/dataverse'
+import {usePrismInstance} from '@framewright/react'
+import type {$FixMe, $IntentionalAny} from '@framewright/core/types/public'
 import React, {useMemo, useRef} from 'react'
 import {invariant} from './invariant'
 

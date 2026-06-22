@@ -1,15 +1,15 @@
-import {privateAPI, setPrivateAPI} from '@theatre/core/privateAPIs'
-import Project from '@theatre/core/projects/Project'
-import type {Asset, ProjectAddress} from '@theatre/core/types/public'
+import {privateAPI, setPrivateAPI} from '@framewright/core/privateAPIs'
+import Project from '@framewright/core/projects/Project'
+import type {Asset, ProjectAddress} from '@framewright/core/types/public'
 import type {
   ProjectId,
   SheetId,
   SheetInstanceId,
-} from '@theatre/core/types/public'
-import {validateInstanceId} from '@theatre/utils/sanitizers'
-import {validateAndSanitiseSlashedPathOrThrow} from '@theatre/utils/slashedPaths'
-import type {IProject, IProjectConfig, ISheet} from '@theatre/core/types/public'
-import {notify} from '@theatre/core/coreExports'
+} from '@framewright/core/types/public'
+import {validateInstanceId} from '@framewright/utils/sanitizers'
+import {validateAndSanitiseSlashedPathOrThrow} from '@framewright/utils/slashedPaths'
+import type {IProject, IProjectConfig, ISheet} from '@framewright/core/types/public'
+import {notify} from '@framewright/core/coreExports'
 
 // export type IProjectConfigExperiments = {
 //   /**

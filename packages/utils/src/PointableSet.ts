@@ -1,4 +1,4 @@
-import type {StrictRecord} from '@theatre/utils/types'
+import type {StrictRecord} from '@framewright/utils/types'
 
 /**
  * Consistent way to maintain an unordered structure which plays well with dataverse pointers and

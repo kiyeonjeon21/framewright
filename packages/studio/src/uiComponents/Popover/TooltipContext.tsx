@@ -1,5 +1,5 @@
-import {Atom} from '@theatre/dataverse'
-import useRefAndState from '@theatre/studio/utils/useRefAndState'
+import {Atom} from '@framewright/dataverse'
+import useRefAndState from '@framewright/studio/utils/useRefAndState'
 import {useCallback, useEffect, useMemo} from 'react'
 
 let lastTooltipId = 0

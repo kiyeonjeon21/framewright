@@ -1,6 +1,6 @@
-import type {$IntentionalAny} from '@theatre/utils/types'
-import type {Pointer} from '@theatre/dataverse'
-import {Atom} from '@theatre/dataverse'
+import type {$IntentionalAny} from '@framewright/utils/types'
+import type {Pointer} from '@framewright/dataverse'
+import {Atom} from '@framewright/dataverse'
 
 type TakeFn<EventType> = (e: EventType) => void
 type TransitionFn<EventType, ContextType> = (

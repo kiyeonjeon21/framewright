@@ -1,5 +1,5 @@
-import userReadableTypeOfValue from '@theatre/utils/userReadableTypeOfValue'
-import {InvalidArgumentError} from '@theatre/utils/errors'
+import userReadableTypeOfValue from '@framewright/utils/userReadableTypeOfValue'
+import {InvalidArgumentError} from '@framewright/utils/errors'
 
 const _validateSym = (
   val: string,

@@ -1,17 +1,17 @@
-import {defer} from '@theatre/utils/defer'
-import {InvalidArgumentError} from '@theatre/utils/errors'
-import noop from '@theatre/utils/noop'
-import type {Prism, Pointer, Ticker} from '@theatre/dataverse'
-import {Atom} from '@theatre/dataverse'
+import {defer} from '@framewright/utils/defer'
+import {InvalidArgumentError} from '@framewright/utils/errors'
+import noop from '@framewright/utils/noop'
+import type {Prism, Pointer, Ticker} from '@framewright/dataverse'
+import {Atom} from '@framewright/dataverse'
 import type {
   IPlaybackController,
   IPlaybackState,
 } from './DefaultPlaybackController'
-import {notify} from '@theatre/core/utils/notify'
+import {notify} from '@framewright/core/utils/notify'
 import type {
   IPlaybackDirection,
   IPlaybackRange,
-} from '@theatre/core/types/public'
+} from '@framewright/core/types/public'
 
 export default class AudioPlaybackController implements IPlaybackController {
   _mainGain: GainNode

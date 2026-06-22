@@ -1,16 +1,16 @@
-import type Sheet from '@theatre/core/sheets/Sheet'
-import getStudio from '@theatre/studio/getStudio'
-import type useDrag from '@theatre/studio/uiComponents/useDrag'
-import type {SheetAddress} from '@theatre/core/types/public'
-import subPrism from '@theatre/utils/subPrism'
+import type Sheet from '@framewright/core/sheets/Sheet'
+import getStudio from '@framewright/studio/getStudio'
+import type useDrag from '@framewright/studio/uiComponents/useDrag'
+import type {SheetAddress} from '@framewright/core/types/public'
+import subPrism from '@framewright/utils/subPrism'
 import type {
   IRange,
   PositionInScreenSpace,
   StrictRecord,
-} from '@theatre/core/types/public'
-import {valToAtom} from '@theatre/utils/valToAtom'
-import type {Prism, Pointer} from '@theatre/dataverse'
-import {Atom, prism, val} from '@theatre/dataverse'
+} from '@framewright/core/types/public'
+import {valToAtom} from '@framewright/utils/valToAtom'
+import type {Prism, Pointer} from '@framewright/dataverse'
+import {Atom, prism, val} from '@framewright/dataverse'
 import type {SequenceEditorTree} from './tree'
 import {calculateSequenceEditorTree} from './tree'
 import {clamp} from 'lodash-es'
@@ -18,7 +18,7 @@ import type {
   KeyframeId,
   ObjectAddressKey,
   SequenceTrackId,
-} from '@theatre/core/types/public'
+} from '@framewright/core/types/public'
 
 // A Side is either the left side of the panel or the right side
 type DimsOfPanelPart = {

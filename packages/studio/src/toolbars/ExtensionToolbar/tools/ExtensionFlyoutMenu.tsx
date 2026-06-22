@@ -1,14 +1,14 @@
 import React, {useRef} from 'react'
 import styled from 'styled-components'
-import {pointerEventsAutoInNormalMode} from '@theatre/studio/css'
+import {pointerEventsAutoInNormalMode} from '@framewright/studio/css'
 import type {
   ToolConfigFlyoutMenu,
   ToolconfigFlyoutMenuItem,
-} from '@theatre/core/types/public'
-import ToolbarIconButton from '@theatre/studio/uiComponents/toolbar/ToolbarIconButton'
-import BaseMenu from '@theatre/studio/uiComponents/simpleContextMenu/ContextMenu/BaseMenu'
-import usePopover from '@theatre/studio/uiComponents/Popover/usePopover'
-import type {$IntentionalAny} from '@theatre/core/types/public'
+} from '@framewright/core/types/public'
+import ToolbarIconButton from '@framewright/studio/uiComponents/toolbar/ToolbarIconButton'
+import BaseMenu from '@framewright/studio/uiComponents/simpleContextMenu/ContextMenu/BaseMenu'
+import usePopover from '@framewright/studio/uiComponents/Popover/usePopover'
+import type {$IntentionalAny} from '@framewright/core/types/public'
 
 const Container = styled.div`
   ${pointerEventsAutoInNormalMode};

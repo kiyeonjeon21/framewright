@@ -20,7 +20,7 @@ fix it with minimal changes.
 - node **>=18** required (`package.json` engines). The node14 note in
   `CONTRIBUTING.md` is outdated.
 - After install, `yarn postinstall` = husky + `prisma generate` for
-  `@theatre/app` & `@theatre/sync-server`. Re-run after Prisma schema/install
+  `@framewright/app` & `@framewright/sync-server`. Re-run after Prisma schema/install
   changes.
 - Build entry: `yarn cli build` (`devEnv/cli.ts`, tsx). Build order:
   `dataverse → saaz → core → studio → react → r3f → theatric → browser-bundles`.

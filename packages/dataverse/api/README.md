@@ -1,6 +1,6 @@
-@theatre/dataverse
+@framewright/dataverse
 
-# @theatre/dataverse
+# @framewright/dataverse
 
 The animation-optimized FRP library powering the internals of Theatre.js.
 

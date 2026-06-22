@@ -21,18 +21,18 @@ import {
 import {FrontStorage} from './FrontStorage'
 import {ensureStateIsUptodate} from '../shared/utils'
 import {debounce} from 'lodash-es'
-import type {Prism} from '@theatre/dataverse'
-import {Atom, prism, val} from '@theatre/dataverse'
-import waitForPrism from '@theatre/utils/waitForPrism'
-import {subscribeDebounced} from '@theatre/utils/subscribeDebounced'
+import type {Prism} from '@framewright/dataverse'
+import {Atom, prism, val} from '@framewright/dataverse'
+import waitForPrism from '@framewright/utils/waitForPrism'
+import {subscribeDebounced} from '@framewright/utils/subscribeDebounced'
 import fastDeepEqual from 'fast-deep-equal'
 import {diff} from 'jest-diff'
 import type {Ops} from '../rogue'
 import {jsonFromCell, makeDraft} from '../rogue'
-import memoizeFn from '@theatre/utils/memoizeFn'
+import memoizeFn from '@framewright/utils/memoizeFn'
 import {nanoid} from 'nanoid'
-import {defer} from '@theatre/utils/defer'
-import type {VoidFn} from '@theatre/utils/types'
+import {defer} from '@framewright/utils/defer'
+import type {VoidFn} from '@framewright/utils/types'
 
 const emptyObject = {}
 const MAX_UNDO_STACK_SIZE = 1000
@@ -124,7 +124,7 @@ export class SaazFront<
    * then a reference to SaazBack can be passed here. This is useful for testing.
    *
    * In environments where the backend and the frontend are in different processes (a client/server setup), an object that
-   * implements `SaazBackInterface` should be passed here. See `@theatre/sync-server` for a TRPC-based implementation.
+   * implements `SaazBackInterface` should be passed here. See `@framewright/sync-server` for a TRPC-based implementation.
    */
   private _backend: SaazBackInterface
 

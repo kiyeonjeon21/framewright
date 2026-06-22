@@ -1,26 +1,26 @@
-import type {TrackData} from '@theatre/core/types/private/core'
-import type {SequenceEditorPanelLayout} from '@theatre/studio/panels/SequenceEditorPanel/layout/layout'
-import type {SequenceEditorTree_PrimitiveProp} from '@theatre/studio/panels/SequenceEditorPanel/layout/tree'
-import {usePrism, useVal} from '@theatre/react'
-import type {Pointer} from '@theatre/dataverse'
-import {val} from '@theatre/dataverse'
+import type {TrackData} from '@framewright/core/types/private/core'
+import type {SequenceEditorPanelLayout} from '@framewright/studio/panels/SequenceEditorPanel/layout/layout'
+import type {SequenceEditorTree_PrimitiveProp} from '@framewright/studio/panels/SequenceEditorPanel/layout/tree'
+import {usePrism, useVal} from '@framewright/react'
+import type {Pointer} from '@framewright/dataverse'
+import {val} from '@framewright/dataverse'
 import React, {useMemo} from 'react'
 import styled from 'styled-components'
 import SingleKeyframeEditor from './KeyframeEditor/SingleKeyframeEditor'
-import useContextMenu from '@theatre/studio/uiComponents/simpleContextMenu/useContextMenu'
-import useRefAndState from '@theatre/studio/utils/useRefAndState'
-import getStudio from '@theatre/studio/getStudio'
-import {arePathsEqual} from '@theatre/utils/pathToProp'
-import type {KeyframeWithPathToPropFromCommonRoot} from '@theatre/core/types/private'
+import useContextMenu from '@framewright/studio/uiComponents/simpleContextMenu/useContextMenu'
+import useRefAndState from '@framewright/studio/utils/useRefAndState'
+import getStudio from '@framewright/studio/getStudio'
+import {arePathsEqual} from '@framewright/utils/pathToProp'
+import type {KeyframeWithPathToPropFromCommonRoot} from '@framewright/core/types/private'
 import KeyframeSnapTarget, {
   snapPositionsStateD,
-} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/KeyframeSnapTarget'
-import {createStudioSheetItemKey} from '@theatre/studio/utils/createStudioSheetItemKey'
-import type {BasicKeyframe} from '@theatre/core'
-import {__private} from '@theatre/core'
+} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/KeyframeSnapTarget'
+import {createStudioSheetItemKey} from '@framewright/studio/utils/createStudioSheetItemKey'
+import type {BasicKeyframe} from '@framewright/core'
+import {__private} from '@framewright/core'
 
 const {keyframeUtils} = __private
-import type {ContextMenuItem} from '@theatre/studio/uiComponents/chordial/chordialInternals'
+import type {ContextMenuItem} from '@framewright/studio/uiComponents/chordial/chordialInternals'
 
 const Container = styled.div`
   position: relative;

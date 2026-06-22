@@ -1,4 +1,4 @@
-import theatre from '@theatre/core'
+import theatre from '@framewright/core'
 import {useEffect, useMemo, useRef} from 'react'
 
 let idCounter = 0

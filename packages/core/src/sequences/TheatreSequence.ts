@@ -1,10 +1,10 @@
-import {privateAPI, setPrivateAPI} from '@theatre/core/privateAPIs'
-import {defer} from '@theatre/utils/defer'
+import {privateAPI, setPrivateAPI} from '@framewright/core/privateAPIs'
+import {defer} from '@framewright/utils/defer'
 import type Sequence from './Sequence'
 import AudioPlaybackController from './playbackControllers/AudioPlaybackController'
-import {getCoreTicker} from '@theatre/core/coreTicker'
-import type {Pointer} from '@theatre/dataverse'
-import {notify} from '@theatre/core/utils/notify'
+import {getCoreTicker} from '@framewright/core/coreTicker'
+import type {Pointer} from '@framewright/dataverse'
+import {notify} from '@framewright/core/utils/notify'
 import type {
   IAttachAudioArgs,
   IPlaybackDirection,
@@ -12,7 +12,7 @@ import type {
   ISequence,
   IRafDriver,
   BasicKeyframe,
-} from '@theatre/core/types/public'
+} from '@framewright/core/types/public'
 
 export default class TheatreSequence implements ISequence {
   get type(): 'Theatre_Sequence_PublicAPI' {
@@ -46,8 +46,8 @@ export default class TheatreSequence implements ISequence {
         notify.warning(
           "Sequence can't be played",
           'You seem to have called `sequence.play()` before the project has finished loading.\n\n' +
-            'This would **not** a problem in production when using `@theatre/core`, since Theatre.js loads instantly in core mode. ' +
-            "However, when using `@theatre/studio`, it takes a few milliseconds for it to load your project's state, " +
+            'This would **not** a problem in production when using `@framewright/core`, since Theatre.js loads instantly in core mode. ' +
+            "However, when using `@framewright/studio`, it takes a few milliseconds for it to load your project's state, " +
             `before which your sequences cannot start playing.\n` +
             `\n` +
             'To fix this, simply defer calling `sequence.play()` until after the project is loaded, like this:\n\n' +

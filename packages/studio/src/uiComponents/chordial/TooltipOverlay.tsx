@@ -1,11 +1,11 @@
 import React from 'react'
-import type {$IntentionalAny} from '@theatre/core/types/public'
-import {val} from '@theatre/dataverse'
-import {usePrism, useVal} from '@theatre/react'
+import type {$IntentionalAny} from '@framewright/core/types/public'
+import {val} from '@framewright/dataverse'
+import {usePrism, useVal} from '@framewright/react'
 import styled from 'styled-components'
-import usePopoverPosition from '@theatre/studio/uiComponents/Popover/usePopoverPosition'
+import usePopoverPosition from '@framewright/studio/uiComponents/Popover/usePopoverPosition'
 import {useTransition, animated, easings} from '@react-spring/web'
-import {pointerEventsAutoInNormalMode} from '@theatre/studio/css'
+import {pointerEventsAutoInNormalMode} from '@framewright/studio/css'
 import {tooltipTarget} from './tooltipActor'
 
 export const TooltipOverlay: React.FC<{}> = () => {

@@ -1,11 +1,11 @@
-import type {SequenceEditorPanelLayout} from '@theatre/studio/panels/SequenceEditorPanel/layout/layout'
-import type {$FixMe} from '@theatre/core/types/public'
-import type {Pointer} from '@theatre/dataverse'
-import {prism, val} from '@theatre/dataverse'
+import type {SequenceEditorPanelLayout} from '@framewright/studio/panels/SequenceEditorPanel/layout/layout'
+import type {$FixMe} from '@framewright/core/types/public'
+import type {Pointer} from '@framewright/dataverse'
+import {prism, val} from '@framewright/dataverse'
 import React, {useLayoutEffect, useMemo, useRef, useState} from 'react'
 import styled from 'styled-components'
 import createGrid from './createGrid'
-import getStudio from '@theatre/studio/getStudio'
+import getStudio from '@framewright/studio/getStudio'
 
 const Container = styled.div`
   position: absolute;

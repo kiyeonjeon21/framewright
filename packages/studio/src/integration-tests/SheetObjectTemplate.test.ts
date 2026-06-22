@@ -1,12 +1,12 @@
-import {setupTestSheet} from '@theatre/studio/integration-tests/testUtils'
-import {encodePathToProp} from '@theatre/utils/pathToProp'
+import {setupTestSheet} from '@framewright/studio/integration-tests/testUtils'
+import {encodePathToProp} from '@framewright/utils/pathToProp'
 import type {
   ObjectAddressKey,
   SequenceTrackId,
-} from '@theatre/core/types/public'
-import type {$IntentionalAny} from '@theatre/core/types/public'
-import {iterateOver} from '@theatre/dataverse'
-import {__private} from '@theatre/core'
+} from '@framewright/core/types/public'
+import type {$IntentionalAny} from '@framewright/core/types/public'
+import {iterateOver} from '@framewright/dataverse'
+import {__private} from '@framewright/core'
 const {asSequenceTrackId} = __private.ids
 
 describe(`SheetObjectTemplate`, () => {

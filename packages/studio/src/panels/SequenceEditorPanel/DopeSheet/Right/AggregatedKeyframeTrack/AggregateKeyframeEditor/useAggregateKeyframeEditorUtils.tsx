@@ -1,9 +1,9 @@
-import {prism} from '@theatre/dataverse'
-import {createStudioSheetItemKey} from '@theatre/studio/utils/createStudioSheetItemKey'
-import {AggregateKeyframePositionIsSelected} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/AggregatedKeyframeTrack/AggregatedKeyframeTrack'
-import {isConnectionEditingInCurvePopover} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/BasicKeyframedTrack/KeyframeEditor/CurveEditorPopover/CurveEditorPopover'
-import {usePrism} from '@theatre/react'
-import {selectedKeyframeConnections} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/selections'
+import {prism} from '@framewright/dataverse'
+import {createStudioSheetItemKey} from '@framewright/studio/utils/createStudioSheetItemKey'
+import {AggregateKeyframePositionIsSelected} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/AggregatedKeyframeTrack/AggregatedKeyframeTrack'
+import {isConnectionEditingInCurvePopover} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/BasicKeyframedTrack/KeyframeEditor/CurveEditorPopover/CurveEditorPopover'
+import {usePrism} from '@framewright/react'
+import {selectedKeyframeConnections} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/selections'
 import type {
   IAggregateKeyframeEditorProps,
   AggregatedKeyframeConnection,

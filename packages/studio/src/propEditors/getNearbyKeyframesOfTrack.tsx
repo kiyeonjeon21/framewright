@@ -1,11 +1,11 @@
-import type {TrackData} from '@theatre/core/types/private/core'
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
-import {createStudioSheetItemKey} from '@theatre/studio/utils/createStudioSheetItemKey'
+import type {TrackData} from '@framewright/core/types/private/core'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
+import {createStudioSheetItemKey} from '@framewright/studio/utils/createStudioSheetItemKey'
 import type {
   KeyframeWithTrack,
   TrackWithId,
-} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/collectAggregateKeyframes'
-import {__private} from '@theatre/core'
+} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/collectAggregateKeyframes'
+import {__private} from '@framewright/core'
 
 const {keyframeUtils} = __private
 

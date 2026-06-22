@@ -45,7 +45,7 @@ async function bundle(watch: boolean) {
       __IS_VISUAL_REGRESSION_TESTING: 'false',
       'process.env.NODE_ENV': '"production"',
     },
-    external: ['@theatre/dataverse', '@theatre/core'],
+    external: ['@framewright/dataverse', '@framewright/core'],
     minify: true,
   }
 

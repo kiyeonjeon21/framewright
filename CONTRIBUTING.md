@@ -145,7 +145,7 @@ $ yarn lint:all --fix
 
 ### Publishing to npm
 
-Currently all packages (except for [`@theatre/r3f`](./packages/r3f/)) share the
+Currently all packages (except for [`@framewright/r3f`](./packages/r3f/)) share the
 same version number. In order to publish to npm, you can run the `release`
 script from the root of the repo:
 
@@ -159,15 +159,15 @@ $ yarn cli release x.y.z-rc.w # npm publish version x.y.z-rc.w and tag it as "rc
 
 The [monorepo](https://en.wikipedia.org/wiki/Monorepo) consists of:
 
-- `@theatre/core` – The core animation library at
+- `@framewright/core` – The core animation library at
   [`./packages/core`](./packages/core).
-- `@theatre/studio` – The visual editor at
+- `@framewright/studio` – The visual editor at
   [`./packages/studio`](./packages/studio).
-- `@theatre/dataverse` – The reactive dataflow library at
+- `@framewright/dataverse` – The reactive dataflow library at
   [`./packages/dataverse`](./packages/dataverse).
-- `@theatre/react` – Utilities for using Theatre.js with React at
+- `@framewright/react` – Utilities for using Theatre.js with React at
   [`./packages/react`](./packages/react).
-- `@theatre/r3f` – The react-three-fiber extension at
+- `@framewright/r3f` – The react-three-fiber extension at
   [`./packages/r3f`](./packages/r3f).
 - `playground` – The playground explained [above](#hacking-with-playground),
   located at [`./packages/playground`](./packages/playground)

@@ -1,5 +1,5 @@
-import {pointerEventsAutoInNormalMode} from '@theatre/studio/css'
-import DropdownChevron from '@theatre/studio/uiComponents/icons/DropdownChevron'
+import {pointerEventsAutoInNormalMode} from '@framewright/studio/css'
+import DropdownChevron from '@framewright/studio/uiComponents/icons/DropdownChevron'
 import React from 'react'
 import styled from 'styled-components'
 

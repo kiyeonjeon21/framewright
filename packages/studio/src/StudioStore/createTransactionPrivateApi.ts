@@ -1,22 +1,22 @@
-import type {Pointer} from '@theatre/dataverse'
-import type {$FixMe, $IntentionalAny} from '@theatre/core/types/public'
+import type {Pointer} from '@framewright/dataverse'
+import type {$FixMe, $IntentionalAny} from '@framewright/core/types/public'
 import get from 'lodash-es/get'
 import type {ITransactionPrivateApi} from './StudioStore'
-import getDeep from '@theatre/utils/getDeep'
-import type {SequenceTrackId} from '@theatre/core/types/public'
-import {getPointerParts} from '@theatre/dataverse'
+import getDeep from '@framewright/utils/getDeep'
+import type {SequenceTrackId} from '@framewright/core/types/public'
+import {getPointerParts} from '@framewright/dataverse'
 import type {
   PropTypeConfig,
   PropTypeConfig_AllSimples,
   PropTypeConfig_Compound,
-} from '@theatre/core/types/public'
-import type {PathToProp} from '@theatre/utils/pathToProp'
-import {__private} from '@theatre/core'
+} from '@framewright/core/types/public'
+import type {PathToProp} from '@framewright/utils/pathToProp'
+import {__private} from '@framewright/core'
 import {isPlainObject} from 'lodash-es'
-import userReadableTypeOfValue from '@theatre/utils/userReadableTypeOfValue'
-import type {StudioState} from '@theatre/core/types/private'
-import type {IInvokableDraftEditors} from '@theatre/sync-server/state/schema'
-import {stateEditors} from '@theatre/sync-server/state/schema'
+import userReadableTypeOfValue from '@framewright/utils/userReadableTypeOfValue'
+import type {StudioState} from '@framewright/core/types/private'
+import type {IInvokableDraftEditors} from '@framewright/sync-server/state/schema'
+import {stateEditors} from '@framewright/sync-server/state/schema'
 
 const {getPropConfigByPath, forEachPropDeep} = __private.propTypeUtils
 const {isSheetObject} = __private.instanceTypes

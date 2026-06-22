@@ -1,8 +1,8 @@
-import type {Asset} from '@theatre/core/types/public'
-import type Project from '@theatre/core/projects/Project'
-import {val} from '@theatre/dataverse'
-import type {$IntentionalAny} from '@theatre/core/types/public'
-import {__private} from '@theatre/core'
+import type {Asset} from '@framewright/core/types/public'
+import type Project from '@framewright/core/projects/Project'
+import {val} from '@framewright/dataverse'
+import type {$IntentionalAny} from '@framewright/core/types/public'
+import {__private} from '@framewright/core'
 const {forEachPropDeep} = __private.propTypeUtils
 const {keyframeUtils} = __private
 

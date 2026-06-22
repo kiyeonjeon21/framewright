@@ -1,4 +1,4 @@
-import type {SyncServerRootRouter} from '@theatre/sync-server/trpc/routes'
+import type {SyncServerRootRouter} from '@framewright/sync-server/trpc/routes'
 import superjson from 'superjson'
 import type {CreateTRPCProxyClient} from '@trpc/client'
 import {

@@ -1,8 +1,8 @@
-import type Project from '@theatre/core/projects/Project'
+import type Project from '@framewright/core/projects/Project'
 import {useCallback} from 'react'
-import getStudio from '@theatre/studio/getStudio'
-import {useVal} from '@theatre/react'
-import type Sheet from '@theatre/core/sheets/Sheet'
+import getStudio from '@framewright/studio/getStudio'
+import {useVal} from '@framewright/react'
+import type Sheet from '@framewright/core/sheets/Sheet'
 
 export function useCollapseStateInOutlinePanel(
   item: Project | Sheet | {type: 'namespace'; sheet: Sheet; path: string[]},

@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import theatre from '@theatre/core'
-import extension from '@theatre/r3f/dist/extension'
+import theatre from '@framewright/core'
+import extension from '@framewright/r3f/dist/extension'
 
 void theatre.getStudio().then((studio) => {
   studio.extend(extension)
   studio.extend({
-    id: '@theatre/hello-world-extension',
+    id: '@framewright/hello-world-extension',
     toolbars: {
       global(set, studio) {
         let switchValue = 'mobile'

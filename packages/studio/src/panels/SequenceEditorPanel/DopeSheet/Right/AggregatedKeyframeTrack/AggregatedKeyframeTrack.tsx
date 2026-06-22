@@ -1,19 +1,19 @@
 import type {
   DopeSheetSelection,
   SequenceEditorPanelLayout,
-} from '@theatre/studio/panels/SequenceEditorPanel/layout/layout'
+} from '@framewright/studio/panels/SequenceEditorPanel/layout/layout'
 import type {
   SequenceEditorTree_PropWithChildren,
   SequenceEditorTree_Sheet,
   SequenceEditorTree_SheetObject,
-} from '@theatre/studio/panels/SequenceEditorPanel/layout/tree'
-import {usePrism, useVal} from '@theatre/react'
-import type {Prism, Pointer} from '@theatre/dataverse'
-import {prism, val, pointerToPrism} from '@theatre/dataverse'
+} from '@framewright/studio/panels/SequenceEditorPanel/layout/tree'
+import {usePrism, useVal} from '@framewright/react'
+import type {Prism, Pointer} from '@framewright/dataverse'
+import {prism, val, pointerToPrism} from '@framewright/dataverse'
 import React, {useMemo, Fragment} from 'react'
 import styled from 'styled-components'
-import useContextMenu from '@theatre/studio/uiComponents/simpleContextMenu/useContextMenu'
-import useRefAndState from '@theatre/studio/utils/useRefAndState'
+import useContextMenu from '@framewright/studio/uiComponents/simpleContextMenu/useContextMenu'
+import useRefAndState from '@framewright/studio/utils/useRefAndState'
 import type {
   IAggregateKeyframesAtPosition,
   IAggregateKeyframeEditorProps,
@@ -22,41 +22,41 @@ import AggregateKeyframeEditor from './AggregateKeyframeEditor/AggregateKeyframe
 import type {
   AggregatedKeyframes,
   KeyframeWithTrack,
-} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/collectAggregateKeyframes'
-import {collectAggregateSnapPositionsObjectOrCompound} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/collectAggregateKeyframes'
-import {useLogger} from '@theatre/studio/uiComponents/useLogger'
+} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/collectAggregateKeyframes'
+import {collectAggregateSnapPositionsObjectOrCompound} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/collectAggregateKeyframes'
+import {useLogger} from '@framewright/studio/uiComponents/useLogger'
 import {getAggregateKeyframeEditorUtilsPrismFn} from './AggregateKeyframeEditor/useAggregateKeyframeEditorUtils'
-import DopeSnap from '@theatre/studio/panels/SequenceEditorPanel/RightOverlay/DopeSnap'
-import type {DragOpts} from '@theatre/studio/uiComponents/useDrag'
-import type {CommitOrDiscardOrRecapture} from '@theatre/studio/StudioStore/StudioStore'
-import useDrag from '@theatre/studio/uiComponents/useDrag'
-import {useLockFrameStampPositionRef} from '@theatre/studio/panels/SequenceEditorPanel/FrameStampPositionProvider'
-import {useCssCursorLock} from '@theatre/studio/uiComponents/PointerEventsHandler'
-import getStudio from '@theatre/studio/getStudio'
-import type {SheetObjectAddress} from '@theatre/core/types/public'
+import DopeSnap from '@framewright/studio/panels/SequenceEditorPanel/RightOverlay/DopeSnap'
+import type {DragOpts} from '@framewright/studio/uiComponents/useDrag'
+import type {CommitOrDiscardOrRecapture} from '@framewright/studio/StudioStore/StudioStore'
+import useDrag from '@framewright/studio/uiComponents/useDrag'
+import {useLockFrameStampPositionRef} from '@framewright/studio/panels/SequenceEditorPanel/FrameStampPositionProvider'
+import {useCssCursorLock} from '@framewright/studio/uiComponents/PointerEventsHandler'
+import getStudio from '@framewright/studio/getStudio'
+import type {SheetObjectAddress} from '@framewright/core/types/public'
 import {
   decodePathToProp,
   encodePathToProp,
   doesPathStartWith,
-} from '@theatre/utils/pathToProp'
+} from '@framewright/utils/pathToProp'
 import type {
   ObjectAddressKey,
   SequenceTrackId,
-} from '@theatre/core/types/public'
-import type Sequence from '@theatre/core/sequences/Sequence'
+} from '@framewright/core/types/public'
+import type Sequence from '@framewright/core/sequences/Sequence'
 import KeyframeSnapTarget, {
   snapPositionsStateD,
-} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/KeyframeSnapTarget'
-import {emptyObject} from '@theatre/utils'
-import type {KeyframeWithPathToPropFromCommonRoot} from '@theatre/core/types/private'
+} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/KeyframeSnapTarget'
+import {emptyObject} from '@framewright/utils'
+import type {KeyframeWithPathToPropFromCommonRoot} from '@framewright/core/types/private'
 import {
   collectKeyframeSnapPositions,
   snapToNone,
   snapToSome,
-} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/KeyframeSnapTarget'
-import {collectAggregateSnapPositionsSheet} from '@theatre/studio/panels/SequenceEditorPanel/DopeSheet/Right/collectAggregateKeyframes'
-import type {BasicKeyframe} from '@theatre/core/types/public'
-import type {ContextMenuItem} from '@theatre/studio/uiComponents/chordial/chordialInternals'
+} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/KeyframeSnapTarget'
+import {collectAggregateSnapPositionsSheet} from '@framewright/studio/panels/SequenceEditorPanel/DopeSheet/Right/collectAggregateKeyframes'
+import type {BasicKeyframe} from '@framewright/core/types/public'
+import type {ContextMenuItem} from '@framewright/studio/uiComponents/chordial/chordialInternals'
 
 const AggregatedKeyframeTrackContainer = styled.div`
   position: relative;

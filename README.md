@@ -1,7 +1,7 @@
 <!--
   framewright — a community continuation of Theatre.js.
-  The README below is largely the original Theatre.js documentation; usage,
-  package names (@theatre/*), and links still point to upstream for now.
+  The README below is largely the original Theatre.js documentation; the prose,
+  demo assets, and external links still reference upstream Theatre.js for now.
 -->
 
 > 🎬 **framewright** is a community continuation of
@@ -10,8 +10,8 @@
 > (Apache-2.0 for the runtime, AGPL-3.0 for the studio) and modernizes the
 > toolchain for current environments (Node 24 LTS, TypeScript 5.9, Vite 8, Jest
 > 30, esbuild 0.28). It is **not affiliated with or endorsed by** the original
-> Theatre.js team. Package names and docs still reference `@theatre/*` upstream
-> and will be rebranded over time.
+> Theatre.js team. Packages are published under the `@framewright/*` scope; the
+> docs and demo assets below still reference upstream Theatre.js for now.
 
 <h1 align="center">framewright</h1>
 <p align="center">Motion Design, for the web</p>
@@ -113,9 +113,9 @@ issue or PR to add a link here.
 
 Your use of Theatre.js is governed under the Apache License Version 2.0:
 
-- Theatre's core (`@theatre/core`) is released under the Apache License. Same
+- Theatre's core (`@framewright/core`) is released under the Apache License. Same
   goes for most packages in this repository.
-- The studio (`@theatre/studio`) is released under the AGPL 3.0 License. This is
+- The studio (`@framewright/studio`) is released under the AGPL 3.0 License. This is
   the package that you use to edit your animations, setup your scenes, etc. You
   only use the studio during design/development. Your project's final bundle
-  only includes `@theatre/core`, so only the Apache License applies.
+  only includes `@framewright/core`, so only the Apache License applies.

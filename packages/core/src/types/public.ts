@@ -1,4 +1,4 @@
-import type {Pointer} from '@theatre/dataverse'
+import type {Pointer} from '@framewright/dataverse'
 
 /** For `any`s that aren't meant to stay `any`*/
 export type $FixMe = any
@@ -247,10 +247,10 @@ export type IProjectConfig = {
 export interface IProject {
   readonly type: 'Theatre_Project_PublicAPI'
   /**
-   * If `@theatre/studio` is used, this promise would resolve when studio has loaded
+   * If `@framewright/studio` is used, this promise would resolve when studio has loaded
    * the state of the project into memory.
    *
-   * If `@theatre/studio` is not used, this promise is already resolved.
+   * If `@framewright/studio` is not used, this promise is already resolved.
    */
   readonly ready: Promise<void>
   /**
@@ -589,7 +589,7 @@ export interface ISequence {
    *
    * @example Usage
    * ```ts
-   * import {onChange, val} from '@theatre/core'
+   * import {onChange, val} from '@framewright/core'
    *
    * // let's assume `sheet` is a sheet
    * const sequence = sheet.sequence
@@ -1196,7 +1196,7 @@ export interface InitOpts {
  * @example
  * Basic usage:
  * ```ts
- * import theatre from '@theatre/core'
+ * import theatre from '@framewright/core'
  *
  * theatre.init({studio: true})
  * ```
@@ -1204,7 +1204,7 @@ export interface InitOpts {
  * @example
  * Usage with **tree-shaking**:
  * ```ts
- * import theatre from '@theatre/core'
+ * import theatre from '@framewright/core'
  *
  * if (process.env.NODE_ENV !== 'production') {
  *   theatre.init({studio: true})

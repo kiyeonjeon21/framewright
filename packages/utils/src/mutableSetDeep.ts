@@ -1,5 +1,5 @@
-import type {Pointer} from '@theatre/dataverse'
-import {getPointerParts, pointer} from '@theatre/dataverse'
+import type {Pointer} from '@framewright/dataverse'
+import {getPointerParts, pointer} from '@framewright/dataverse'
 import lodashSet from 'lodash-es/set'
 
 /**

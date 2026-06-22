@@ -6163,8 +6163,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@examples/basic-dom@workspace:examples/basic-dom"
   dependencies:
-    "@theatre/core": "workspace:*"
-    "@theatre/studio": "workspace:*"
+    "@framewright/core": "workspace:*"
+    "@framewright/studio": "workspace:*"
     "@types/react": ^17.0.19
     "@types/react-dom": ^17.0.9
     parcel-bundler: ^1.12.5
@@ -6178,11 +6178,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@examples/dom-cra@workspace:examples/dom-cra"
   dependencies:
+    "@framewright/core": "workspace:*"
+    "@framewright/studio": "workspace:*"
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
-    "@theatre/core": "workspace:*"
-    "@theatre/studio": "workspace:*"
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 4.0.3
@@ -6194,13 +6194,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@examples/r3f-cra@workspace:examples/r3f-cra"
   dependencies:
+    "@framewright/core": "workspace:*"
+    "@framewright/r3f": "workspace:*"
+    "@framewright/studio": "workspace:*"
     "@react-three/drei": ^7.2.2
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^11.1.0
     "@testing-library/user-event": ^12.1.10
-    "@theatre/core": "workspace:*"
-    "@theatre/r3f": "workspace:*"
-    "@theatre/studio": "workspace:*"
     react-scripts: ^5.0.1
     three: ^0.130.1
     web-vitals: ^1.0.1
@@ -6244,6 +6244,378 @@ __metadata:
   checksum: b34d4b5470869727f52e312e08272edef985ba5a450a76de0917ba0a9c6f5df2bdbeb99448e2c60f39b177fb8981c772ff1831424e75123471a27ebd5b52c1eb
   languageName: node
   linkType: hard
+
+"@framewright/app@workspace:*, @framewright/app@workspace:packages/app":
+  version: 0.0.0-use.local
+  resolution: "@framewright/app@workspace:packages/app"
+  dependencies:
+    "@auth/prisma-adapter": ^1.0.3
+    "@cspotcode/zx": ^6.1.2
+    "@framewright/utils": "workspace:*"
+    "@hookform/resolvers": ^3.3.2
+    "@prisma/client": ^4.12.0
+    "@radix-ui/react-alert-dialog": ^1.0.5
+    "@radix-ui/react-avatar": ^1.0.4
+    "@radix-ui/react-context-menu": ^2.1.5
+    "@radix-ui/react-dialog": ^1.0.5
+    "@radix-ui/react-icons": ^1.3.0
+    "@radix-ui/react-label": ^2.0.2
+    "@radix-ui/react-popover": ^1.0.7
+    "@radix-ui/react-select": ^2.0.0
+    "@radix-ui/react-separator": ^1.0.3
+    "@radix-ui/react-slot": ^1.0.2
+    "@radix-ui/react-toast": ^1.1.5
+    "@tanstack/react-query": ^4.36.1
+    "@trpc/client": ^10.43.0
+    "@trpc/next": ^10.43.0
+    "@trpc/react-query": ^10.43.0
+    "@trpc/server": ^10.43.0
+    "@types/jsonwebtoken": ^9.0.2
+    "@types/node": 20.4.9
+    "@types/react": 18.2.20
+    "@types/react-dom": 18.2.7
+    "@types/uuid": ^8.3.0
+    autoprefixer: ^10.4.16
+    class-variance-authority: ^0.7.0
+    clsx: ^2.0.0
+    cors: ^2.8.5
+    cross-env: ^7.0.3
+    dotenv: ^16.3.1
+    esbuild: ^0.18.20
+    eslint-config-next: 13.4.13
+    jose: ^4.14.4
+    jsonwebtoken: ^9.0.1
+    lucide-react: ^0.289.0
+    nanoid: ^3.3.1
+    next: latest
+    next-auth: ^4.23.2
+    npm-run-all: ^4.1.5
+    oauth4webapi: ^2.4.0
+    pg: ^8.11.2
+    postcss: ^8.4.31
+    prisma: ^4.12.0
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-hook-form: ^7.47.0
+    react-promptify: ^0.3.0
+    sade: ^1.8.1
+    superjson: ^1.13.1
+    tailwind-merge: ^1.14.0
+    tailwindcss: ^3.3.3
+    tailwindcss-animate: ^1.0.7
+    tsx: ^3.12.7
+    typescript: 5.1.6
+    uuid: ^8.3.2
+    yaml: ^2.3.1
+    zod: ^3.22.4
+    zod-validation-error: ^1.3.1
+  languageName: unknown
+  linkType: soft
+
+"@framewright/browser-bundles@workspace:packages/browser-bundles":
+  version: 0.0.0-use.local
+  resolution: "@framewright/browser-bundles@workspace:packages/browser-bundles"
+  dependencies:
+    "@framewright/core": "workspace:*"
+    "@framewright/studio": "workspace:*"
+    esbuild: ^0.19.11
+    npm-run-all: ^4.1.5
+    tsx: 4.7.0
+    typescript: 5.1.6
+  languageName: unknown
+  linkType: soft
+
+"@framewright/core-0.5.0@npm:@theatre/core@0.5.0":
+  version: 0.5.0
+  resolution: "@theatre/core@npm:0.5.0"
+  dependencies:
+    "@theatre/dataverse": 0.5.0
+  checksum: a2ea19d31f2574b5222f4dca5dc5f75c5a63f7d9b2ef27b185698b6617193bac6aaf2780215e32aad92bf208791703040a3f3c0cf51017f640a36d44d2dfab70
+  languageName: node
+  linkType: hard
+
+"@framewright/core@workspace:*, @framewright/core@workspace:packages/core":
+  version: 0.0.0-use.local
+  resolution: "@framewright/core@workspace:packages/core"
+  dependencies:
+    "@framewright/dataverse": "workspace:*"
+    "@framewright/utils": "workspace:*"
+    "@rollup/plugin-alias": ^5.1.0
+    "@rollup/plugin-multi-entry": ^6.0.1
+    "@rollup/plugin-replace": ^5.0.5
+    "@rollup/plugin-typescript": ^11.1.5
+    "@types/node": ^20.10.5
+    "@types/rollup": 0.54.0
+    esbuild: 0.18.17
+    fast-deep-equal: ^3.1.3
+    lodash-es: 4.17.21
+    rollup: ^4.9.2
+    rollup-plugin-dts: ^6.1.0
+    sade: ^1.8.1
+    timing-function: ^0.2.3
+    tsx: 4.7.0
+    typescript: 5.1.6
+    zod: ^3.21.4
+    zod-validation-error: ^1.3.1
+  languageName: unknown
+  linkType: soft
+
+"@framewright/dataverse-0.5.0@npm:@theatre/dataverse@0.5.0, @theatre/dataverse@npm:0.5.0":
+  version: 0.5.0
+  resolution: "@theatre/dataverse@npm:0.5.0"
+  dependencies:
+    lodash-es: ^4.17.21
+  checksum: a7dcd31539ecaaabb054f298f06340cf5e1958cacb97d36ae9ac92c36d43366ac0cb0a2e48502e4fd870947489f764179d7f99f4d6ca1f19920f360393c75781
+  languageName: node
+  linkType: hard
+
+"@framewright/dataverse-experiments@workspace:packages/dataverse-experiments":
+  version: 0.0.0-use.local
+  resolution: "@framewright/dataverse-experiments@workspace:packages/dataverse-experiments"
+  dependencies:
+    "@types/jest": ^26.0.23
+    "@types/lodash-es": ^4.17.4
+    "@types/node": ^15.6.2
+    "@types/react": ^17.0.9
+    lodash-es: ^4.17.21
+    typescript: 5.1.6
+  languageName: unknown
+  linkType: soft
+
+"@framewright/dataverse@workspace:*, @framewright/dataverse@workspace:packages/dataverse":
+  version: 0.0.0-use.local
+  resolution: "@framewright/dataverse@workspace:packages/dataverse"
+  dependencies:
+    "@microsoft/api-extractor": ^7.36.4
+    "@types/jest": ^26.0.23
+    "@types/lodash-es": ^4.17.4
+    "@types/node": ^15.6.2
+    esbuild: ^0.12.15
+    lodash-es: ^4.17.21
+    npm-run-all: ^4.1.5
+    tsx: 4.7.0
+    typedoc: ^0.24.8
+    typedoc-plugin-markdown: ^3.15.4
+    typescript: 5.1.6
+  languageName: unknown
+  linkType: soft
+
+"@framewright/r3f@workspace:*, @framewright/r3f@workspace:packages/r3f":
+  version: 0.0.0-use.local
+  resolution: "@framewright/r3f@workspace:packages/r3f"
+  dependencies:
+    "@framewright/dataverse": "workspace:*"
+    "@framewright/react": "workspace:*"
+    "@react-three/drei": ^9.80.1
+    "@react-three/fiber": ^8.13.6
+    "@types/jest": ^26.0.23
+    "@types/lodash-es": ^4.17.4
+    "@types/node": ^15.6.2
+    "@types/react": ^18.2.18
+    "@types/react-dom": ^18.2.7
+    "@types/styled-components": ^5.1.26
+    "@types/three": 0.155.0
+    esbuild: ^0.18.17
+    lodash-es: ^4.17.21
+    npm-run-all: ^4.1.5
+    polished: ^4.1.3
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-icons: ^4.2.0
+    react-merge-refs: ^2.0.2
+    react-shadow: ^20.4.0
+    react-use-measure: ^2.1.1
+    reakit: ^1.3.8
+    styled-components: ^5.3.11
+    three: 0.155.0
+    three-stdlib: ^2.24.1
+    tsx: 4.7.0
+    typescript: 5.1.6
+    zustand: ^3.5.1
+  peerDependencies:
+    "@framewright/core": "*"
+    "@framewright/studio": "*"
+    "@react-three/fiber": ^8.13.6
+    react: ">=17.0.2"
+    react-dom: ">=17.0.2"
+    three: ">=0.155.0"
+  languageName: unknown
+  linkType: soft
+
+"@framewright/react@workspace:*, @framewright/react@workspace:packages/react":
+  version: 0.0.0-use.local
+  resolution: "@framewright/react@workspace:packages/react"
+  dependencies:
+    "@framewright/dataverse": "workspace:*"
+    "@microsoft/api-extractor": ^7.18.11
+    "@types/jest": ^26.0.23
+    "@types/lodash-es": ^4.17.4
+    "@types/node": ^15.6.2
+    "@types/react": ^17.0.9
+    "@types/react-dom": ^17.0.6
+    esbuild: ^0.12.15
+    lodash-es: ^4.17.21
+    npm-run-all: ^4.1.5
+    queue-microtask: ^1.2.3
+    tsx: 4.7.0
+    typescript: 5.1.6
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+  languageName: unknown
+  linkType: soft
+
+"@framewright/saaz@workspace:*, @framewright/saaz@workspace:packages/saaz":
+  version: 0.0.0-use.local
+  resolution: "@framewright/saaz@workspace:packages/saaz"
+  dependencies:
+    "@framewright/dataverse": "workspace:*"
+    "@framewright/utils": "workspace:*"
+    "@microsoft/api-extractor": ^7.36.4
+    "@types/jest": ^26.0.23
+    "@types/lodash-es": ^4.17.4
+    "@types/node": ^15.6.2
+    esbuild: ^0.12.15
+    fast-deep-equal: ^3.1.3
+    idb: ^7.1.1
+    immer: ^9.0.6
+    jest-diff: ^29.6.4
+    lodash-es: ^4.17.21
+    nanoid: ^4.0.2
+    npm-run-all: ^4.1.5
+    tsx: 4.7.0
+    typedoc: ^0.24.8
+    typedoc-plugin-markdown: ^3.15.4
+    typescript: 5.1.6
+  languageName: unknown
+  linkType: soft
+
+"@framewright/studio-0.5.0@npm:@theatre/studio@0.5.0":
+  version: 0.5.0
+  resolution: "@theatre/studio@npm:0.5.0"
+  dependencies:
+    "@theatre/dataverse": 0.5.0
+  peerDependencies:
+    "@theatre/core": "*"
+  checksum: a7c11054df8094b375cdfaba93952bf14cfe5a51e9e789a248c45012d7680a10392062fd359d9353be469b2a4402dad3942f7e6a3797a04bc8dc651815e3318e
+  languageName: node
+  linkType: hard
+
+"@framewright/studio@workspace:*, @framewright/studio@workspace:packages/studio":
+  version: 0.0.0-use.local
+  resolution: "@framewright/studio@workspace:packages/studio"
+  dependencies:
+    "@framewright/app": "workspace:*"
+    "@framewright/dataverse": "workspace:*"
+    "@framewright/react": "workspace:*"
+    "@framewright/saaz": "workspace:*"
+    "@framewright/sync-server": "workspace:*"
+    "@framewright/utils": "workspace:*"
+    "@react-spring/web": ^9.7.3
+    "@styled/typescript-styled-plugin": ^1.0.1
+    "@trpc/client": ^10.43.0
+    "@types/jest": ^26.0.24
+    "@types/marked": ^4.0.7
+    "@types/node": ^20.10.5
+    "@types/react": 18.2.18
+    "@types/react-dom": 18.2.7
+    "@types/react-icons": 3.0.0
+    "@types/shallowequal": ^1.1.1
+    "@types/uuid": ^8.3.0
+    blob-compare: 1.1.0
+    esbuild: ^0.18.17
+    fuzzy: ^0.1.3
+    idb-keyval: ^6.2.0
+    identity-obj-proxy: ^3.0.0
+    immer: 9.0.6
+    jose: 4.14.4
+    jszip: 3.10.1
+    lodash-es: 4.17.21
+    marked: ^4.1.1
+    nanoid: 3.3.1
+    oauth4webapi: 2.4.0
+    polished: 4.1.3
+    react: 18.2.0
+    react-colorful: ^5.5.1
+    react-dom: 18.2.0
+    react-error-boundary: 3.1.3
+    react-hot-toast: 2.4.0
+    react-icons: 4.12.0
+    react-merge-refs: 2.0.2
+    react-shadow: 20.4.0
+    react-use: 17.2.4
+    reakit: 1.3.8
+    sade: ^1.8.1
+    shallowequal: 1.1.0
+    styled-components: ^5.3.11
+    superjson: 1.13.1
+    timing-function: ^0.2.3
+    tsx: 4.7.0
+    typescript: 5.1.6
+    typescript-styled-plugin: ^0.18.3
+  peerDependencies:
+    "@framewright/core": "*"
+  languageName: unknown
+  linkType: soft
+
+"@framewright/sync-server@workspace:*, @framewright/sync-server@workspace:packages/sync-server":
+  version: 0.0.0-use.local
+  resolution: "@framewright/sync-server@workspace:packages/sync-server"
+  dependencies:
+    "@cspotcode/zx": ^6.1.2
+    "@framewright/app": "workspace:*"
+    "@framewright/core": "workspace:*"
+    "@framewright/saaz": "workspace:*"
+    "@framewright/utils": "workspace:*"
+    "@prisma/client": ^4.12.0
+    "@trpc/client": ^10.43.0
+    "@trpc/server": ^10.43.0
+    "@types/node": 20.10.5
+    "@types/ws": ^8.5.5
+    cross-env: ^7.0.3
+    dotenv: ^16.3.1
+    esbuild: ^0.17.15
+    immer: 9.0.6
+    jose: ^4.14.4
+    lodash-es: 4.17.21
+    nanoid: 3.3.1
+    npm-run-all: ^4.1.5
+    prisma: ^4.12.0
+    sade: ^1.8.1
+    superjson: ^1.13.1
+    tsx: ^3.12.7
+    typescript: 5.1.6
+    ws: ^8.13.0
+    yaml: ^2.3.1
+    zod: ^3.22.4
+    zod-validation-error: ^1.5.0
+  languageName: unknown
+  linkType: soft
+
+"@framewright/utils@workspace:*, @framewright/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@framewright/utils@workspace:packages/utils"
+  dependencies:
+    "@framewright/dataverse": "workspace:*"
+    "@microsoft/api-extractor": ^7.36.4
+    "@types/jest": ^26.0.23
+    "@types/lodash-es": ^4.17.4
+    "@types/node": ^15.6.2
+    esbuild: ^0.12.15
+    fast-deep-equal: ^3.1.3
+    idb: ^7.1.1
+    immer: ^9.0.6
+    jest-diff: ^29.6.4
+    lodash-es: ^4.17.21
+    nanoid: ^4.0.2
+    npm-run-all: ^4.1.5
+    propose: ^0.0.5
+    tsx: 4.7.0
+    typedoc: ^0.24.8
+    typedoc-plugin-markdown: ^3.15.4
+    typescript: 5.1.6
+  languageName: unknown
+  linkType: soft
 
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
@@ -10164,86 +10536,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@theatre/app@workspace:*, @theatre/app@workspace:packages/app":
-  version: 0.0.0-use.local
-  resolution: "@theatre/app@workspace:packages/app"
-  dependencies:
-    "@auth/prisma-adapter": ^1.0.3
-    "@cspotcode/zx": ^6.1.2
-    "@hookform/resolvers": ^3.3.2
-    "@prisma/client": ^4.12.0
-    "@radix-ui/react-alert-dialog": ^1.0.5
-    "@radix-ui/react-avatar": ^1.0.4
-    "@radix-ui/react-context-menu": ^2.1.5
-    "@radix-ui/react-dialog": ^1.0.5
-    "@radix-ui/react-icons": ^1.3.0
-    "@radix-ui/react-label": ^2.0.2
-    "@radix-ui/react-popover": ^1.0.7
-    "@radix-ui/react-select": ^2.0.0
-    "@radix-ui/react-separator": ^1.0.3
-    "@radix-ui/react-slot": ^1.0.2
-    "@radix-ui/react-toast": ^1.1.5
-    "@tanstack/react-query": ^4.36.1
-    "@theatre/utils": "workspace:*"
-    "@trpc/client": ^10.43.0
-    "@trpc/next": ^10.43.0
-    "@trpc/react-query": ^10.43.0
-    "@trpc/server": ^10.43.0
-    "@types/jsonwebtoken": ^9.0.2
-    "@types/node": 20.4.9
-    "@types/react": 18.2.20
-    "@types/react-dom": 18.2.7
-    "@types/uuid": ^8.3.0
-    autoprefixer: ^10.4.16
-    class-variance-authority: ^0.7.0
-    clsx: ^2.0.0
-    cors: ^2.8.5
-    cross-env: ^7.0.3
-    dotenv: ^16.3.1
-    esbuild: ^0.18.20
-    eslint-config-next: 13.4.13
-    jose: ^4.14.4
-    jsonwebtoken: ^9.0.1
-    lucide-react: ^0.289.0
-    nanoid: ^3.3.1
-    next: latest
-    next-auth: ^4.23.2
-    npm-run-all: ^4.1.5
-    oauth4webapi: ^2.4.0
-    pg: ^8.11.2
-    postcss: ^8.4.31
-    prisma: ^4.12.0
-    react: 18.2.0
-    react-dom: 18.2.0
-    react-hook-form: ^7.47.0
-    react-promptify: ^0.3.0
-    sade: ^1.8.1
-    superjson: ^1.13.1
-    tailwind-merge: ^1.14.0
-    tailwindcss: ^3.3.3
-    tailwindcss-animate: ^1.0.7
-    tsx: ^3.12.7
-    typescript: 5.1.6
-    uuid: ^8.3.2
-    yaml: ^2.3.1
-    zod: ^3.22.4
-    zod-validation-error: ^1.3.1
-  languageName: unknown
-  linkType: soft
-
-"@theatre/browser-bundles@workspace:packages/browser-bundles":
-  version: 0.0.0-use.local
-  resolution: "@theatre/browser-bundles@workspace:packages/browser-bundles"
-  dependencies:
-    "@theatre/core": "workspace:*"
-    "@theatre/studio": "workspace:*"
-    esbuild: ^0.19.11
-    npm-run-all: ^4.1.5
-    tsx: 4.7.0
-    typescript: 5.1.6
-  languageName: unknown
-  linkType: soft
-
 "@theatre/compat-tests@workspace:compat-tests":
   version: 0.0.0-use.local
   resolution: "@theatre/compat-tests@workspace:compat-tests"
@@ -10258,298 +10550,6 @@ __metadata:
     verdaccio: ^5.26.1
     verdaccio-auth-memory: ^10.2.2
     verdaccio-memory: ^10.3.2
-  languageName: unknown
-  linkType: soft
-
-"@theatre/core-0.5.0@npm:@theatre/core@0.5.0":
-  version: 0.5.0
-  resolution: "@theatre/core@npm:0.5.0"
-  dependencies:
-    "@theatre/dataverse": 0.5.0
-  checksum: a2ea19d31f2574b5222f4dca5dc5f75c5a63f7d9b2ef27b185698b6617193bac6aaf2780215e32aad92bf208791703040a3f3c0cf51017f640a36d44d2dfab70
-  languageName: node
-  linkType: hard
-
-"@theatre/core@workspace:*, @theatre/core@workspace:packages/core":
-  version: 0.0.0-use.local
-  resolution: "@theatre/core@workspace:packages/core"
-  dependencies:
-    "@rollup/plugin-alias": ^5.1.0
-    "@rollup/plugin-multi-entry": ^6.0.1
-    "@rollup/plugin-replace": ^5.0.5
-    "@rollup/plugin-typescript": ^11.1.5
-    "@theatre/dataverse": "workspace:*"
-    "@theatre/utils": "workspace:*"
-    "@types/node": ^20.10.5
-    "@types/rollup": 0.54.0
-    esbuild: 0.18.17
-    fast-deep-equal: ^3.1.3
-    lodash-es: 4.17.21
-    rollup: ^4.9.2
-    rollup-plugin-dts: ^6.1.0
-    sade: ^1.8.1
-    timing-function: ^0.2.3
-    tsx: 4.7.0
-    typescript: 5.1.6
-    zod: ^3.21.4
-    zod-validation-error: ^1.3.1
-  languageName: unknown
-  linkType: soft
-
-"@theatre/dataverse-0.5.0@npm:@theatre/dataverse@0.5.0, @theatre/dataverse@npm:0.5.0":
-  version: 0.5.0
-  resolution: "@theatre/dataverse@npm:0.5.0"
-  dependencies:
-    lodash-es: ^4.17.21
-  checksum: a7dcd31539ecaaabb054f298f06340cf5e1958cacb97d36ae9ac92c36d43366ac0cb0a2e48502e4fd870947489f764179d7f99f4d6ca1f19920f360393c75781
-  languageName: node
-  linkType: hard
-
-"@theatre/dataverse-experiments@workspace:packages/dataverse-experiments":
-  version: 0.0.0-use.local
-  resolution: "@theatre/dataverse-experiments@workspace:packages/dataverse-experiments"
-  dependencies:
-    "@types/jest": ^26.0.23
-    "@types/lodash-es": ^4.17.4
-    "@types/node": ^15.6.2
-    "@types/react": ^17.0.9
-    lodash-es: ^4.17.21
-    typescript: 5.1.6
-  languageName: unknown
-  linkType: soft
-
-"@theatre/dataverse@workspace:*, @theatre/dataverse@workspace:packages/dataverse":
-  version: 0.0.0-use.local
-  resolution: "@theatre/dataverse@workspace:packages/dataverse"
-  dependencies:
-    "@microsoft/api-extractor": ^7.36.4
-    "@types/jest": ^26.0.23
-    "@types/lodash-es": ^4.17.4
-    "@types/node": ^15.6.2
-    esbuild: ^0.12.15
-    lodash-es: ^4.17.21
-    npm-run-all: ^4.1.5
-    tsx: 4.7.0
-    typedoc: ^0.24.8
-    typedoc-plugin-markdown: ^3.15.4
-    typescript: 5.1.6
-  languageName: unknown
-  linkType: soft
-
-"@theatre/r3f@workspace:*, @theatre/r3f@workspace:packages/r3f":
-  version: 0.0.0-use.local
-  resolution: "@theatre/r3f@workspace:packages/r3f"
-  dependencies:
-    "@react-three/drei": ^9.80.1
-    "@react-three/fiber": ^8.13.6
-    "@theatre/dataverse": "workspace:*"
-    "@theatre/react": "workspace:*"
-    "@types/jest": ^26.0.23
-    "@types/lodash-es": ^4.17.4
-    "@types/node": ^15.6.2
-    "@types/react": ^18.2.18
-    "@types/react-dom": ^18.2.7
-    "@types/styled-components": ^5.1.26
-    "@types/three": 0.155.0
-    esbuild: ^0.18.17
-    lodash-es: ^4.17.21
-    npm-run-all: ^4.1.5
-    polished: ^4.1.3
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-icons: ^4.2.0
-    react-merge-refs: ^2.0.2
-    react-shadow: ^20.4.0
-    react-use-measure: ^2.1.1
-    reakit: ^1.3.8
-    styled-components: ^5.3.11
-    three: 0.155.0
-    three-stdlib: ^2.24.1
-    tsx: 4.7.0
-    typescript: 5.1.6
-    zustand: ^3.5.1
-  peerDependencies:
-    "@react-three/fiber": ^8.13.6
-    "@theatre/core": "*"
-    "@theatre/studio": "*"
-    react: ">=17.0.2"
-    react-dom: ">=17.0.2"
-    three: ">=0.155.0"
-  languageName: unknown
-  linkType: soft
-
-"@theatre/react@workspace:*, @theatre/react@workspace:packages/react":
-  version: 0.0.0-use.local
-  resolution: "@theatre/react@workspace:packages/react"
-  dependencies:
-    "@microsoft/api-extractor": ^7.18.11
-    "@theatre/dataverse": "workspace:*"
-    "@types/jest": ^26.0.23
-    "@types/lodash-es": ^4.17.4
-    "@types/node": ^15.6.2
-    "@types/react": ^17.0.9
-    "@types/react-dom": ^17.0.6
-    esbuild: ^0.12.15
-    lodash-es: ^4.17.21
-    npm-run-all: ^4.1.5
-    queue-microtask: ^1.2.3
-    tsx: 4.7.0
-    typescript: 5.1.6
-  peerDependencies:
-    react: "*"
-    react-dom: "*"
-  languageName: unknown
-  linkType: soft
-
-"@theatre/saaz@workspace:*, @theatre/saaz@workspace:packages/saaz":
-  version: 0.0.0-use.local
-  resolution: "@theatre/saaz@workspace:packages/saaz"
-  dependencies:
-    "@microsoft/api-extractor": ^7.36.4
-    "@theatre/dataverse": "workspace:*"
-    "@theatre/utils": "workspace:*"
-    "@types/jest": ^26.0.23
-    "@types/lodash-es": ^4.17.4
-    "@types/node": ^15.6.2
-    esbuild: ^0.12.15
-    fast-deep-equal: ^3.1.3
-    idb: ^7.1.1
-    immer: ^9.0.6
-    jest-diff: ^29.6.4
-    lodash-es: ^4.17.21
-    nanoid: ^4.0.2
-    npm-run-all: ^4.1.5
-    tsx: 4.7.0
-    typedoc: ^0.24.8
-    typedoc-plugin-markdown: ^3.15.4
-    typescript: 5.1.6
-  languageName: unknown
-  linkType: soft
-
-"@theatre/studio-0.5.0@npm:@theatre/studio@0.5.0":
-  version: 0.5.0
-  resolution: "@theatre/studio@npm:0.5.0"
-  dependencies:
-    "@theatre/dataverse": 0.5.0
-  peerDependencies:
-    "@theatre/core": "*"
-  checksum: a7c11054df8094b375cdfaba93952bf14cfe5a51e9e789a248c45012d7680a10392062fd359d9353be469b2a4402dad3942f7e6a3797a04bc8dc651815e3318e
-  languageName: node
-  linkType: hard
-
-"@theatre/studio@workspace:*, @theatre/studio@workspace:packages/studio":
-  version: 0.0.0-use.local
-  resolution: "@theatre/studio@workspace:packages/studio"
-  dependencies:
-    "@react-spring/web": ^9.7.3
-    "@styled/typescript-styled-plugin": ^1.0.1
-    "@theatre/app": "workspace:*"
-    "@theatre/dataverse": "workspace:*"
-    "@theatre/react": "workspace:*"
-    "@theatre/saaz": "workspace:*"
-    "@theatre/sync-server": "workspace:*"
-    "@theatre/utils": "workspace:*"
-    "@trpc/client": ^10.43.0
-    "@types/jest": ^26.0.24
-    "@types/marked": ^4.0.7
-    "@types/node": ^20.10.5
-    "@types/react": 18.2.18
-    "@types/react-dom": 18.2.7
-    "@types/react-icons": 3.0.0
-    "@types/shallowequal": ^1.1.1
-    "@types/uuid": ^8.3.0
-    blob-compare: 1.1.0
-    esbuild: ^0.18.17
-    fuzzy: ^0.1.3
-    idb-keyval: ^6.2.0
-    identity-obj-proxy: ^3.0.0
-    immer: 9.0.6
-    jose: 4.14.4
-    jszip: 3.10.1
-    lodash-es: 4.17.21
-    marked: ^4.1.1
-    nanoid: 3.3.1
-    oauth4webapi: 2.4.0
-    polished: 4.1.3
-    react: 18.2.0
-    react-colorful: ^5.5.1
-    react-dom: 18.2.0
-    react-error-boundary: 3.1.3
-    react-hot-toast: 2.4.0
-    react-icons: 4.12.0
-    react-merge-refs: 2.0.2
-    react-shadow: 20.4.0
-    react-use: 17.2.4
-    reakit: 1.3.8
-    sade: ^1.8.1
-    shallowequal: 1.1.0
-    styled-components: ^5.3.11
-    superjson: 1.13.1
-    timing-function: ^0.2.3
-    tsx: 4.7.0
-    typescript: 5.1.6
-    typescript-styled-plugin: ^0.18.3
-  peerDependencies:
-    "@theatre/core": "*"
-  languageName: unknown
-  linkType: soft
-
-"@theatre/sync-server@workspace:*, @theatre/sync-server@workspace:packages/sync-server":
-  version: 0.0.0-use.local
-  resolution: "@theatre/sync-server@workspace:packages/sync-server"
-  dependencies:
-    "@cspotcode/zx": ^6.1.2
-    "@prisma/client": ^4.12.0
-    "@theatre/app": "workspace:*"
-    "@theatre/core": "workspace:*"
-    "@theatre/saaz": "workspace:*"
-    "@theatre/utils": "workspace:*"
-    "@trpc/client": ^10.43.0
-    "@trpc/server": ^10.43.0
-    "@types/node": 20.10.5
-    "@types/ws": ^8.5.5
-    cross-env: ^7.0.3
-    dotenv: ^16.3.1
-    esbuild: ^0.17.15
-    immer: 9.0.6
-    jose: ^4.14.4
-    lodash-es: 4.17.21
-    nanoid: 3.3.1
-    npm-run-all: ^4.1.5
-    prisma: ^4.12.0
-    sade: ^1.8.1
-    superjson: ^1.13.1
-    tsx: ^3.12.7
-    typescript: 5.1.6
-    ws: ^8.13.0
-    yaml: ^2.3.1
-    zod: ^3.22.4
-    zod-validation-error: ^1.5.0
-  languageName: unknown
-  linkType: soft
-
-"@theatre/utils@workspace:*, @theatre/utils@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "@theatre/utils@workspace:packages/utils"
-  dependencies:
-    "@microsoft/api-extractor": ^7.36.4
-    "@theatre/dataverse": "workspace:*"
-    "@types/jest": ^26.0.23
-    "@types/lodash-es": ^4.17.4
-    "@types/node": ^15.6.2
-    esbuild: ^0.12.15
-    fast-deep-equal: ^3.1.3
-    idb: ^7.1.1
-    immer: ^9.0.6
-    jest-diff: ^29.6.4
-    lodash-es: ^4.17.21
-    nanoid: ^4.0.2
-    npm-run-all: ^4.1.5
-    propose: ^0.0.5
-    tsx: 4.7.0
-    typedoc: ^0.24.8
-    typedoc-plugin-markdown: ^3.15.4
-    typescript: 5.1.6
   languageName: unknown
   linkType: soft
 
@@ -14743,12 +14743,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "benchmarks@workspace:packages/benchmarks"
   dependencies:
-    "@theatre/core": "workspace:*"
-    "@theatre/core-0.5.0": "npm:@theatre/core@0.5.0"
-    "@theatre/dataverse-0.5.0": "npm:@theatre/dataverse@0.5.0"
-    "@theatre/r3f": "workspace:*"
-    "@theatre/studio": "workspace:*"
-    "@theatre/studio-0.5.0": "npm:@theatre/studio@0.5.0"
+    "@framewright/core": "workspace:*"
+    "@framewright/core-0.5.0": "npm:@theatre/core@0.5.0"
+    "@framewright/dataverse-0.5.0": "npm:@theatre/dataverse@0.5.0"
+    "@framewright/r3f": "workspace:*"
+    "@framewright/studio": "workspace:*"
+    "@framewright/studio-0.5.0": "npm:@theatre/studio@0.5.0"
     "@types/jest": ^29.2.3
     "@types/lodash-es": ^4.17.6
     "@types/node": ^18.11.9
@@ -30402,14 +30402,14 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "playground@workspace:packages/playground"
   dependencies:
+    "@framewright/core": "workspace:*"
+    "@framewright/dataverse": "workspace:*"
+    "@framewright/r3f": "workspace:*"
+    "@framewright/react": "workspace:*"
+    "@framewright/studio": "workspace:*"
     "@playwright/test": ^1.61.0
     "@react-three/drei": ^9.80.1
     "@react-three/fiber": ^8.13.6
-    "@theatre/core": "workspace:*"
-    "@theatre/dataverse": "workspace:*"
-    "@theatre/r3f": "workspace:*"
-    "@theatre/react": "workspace:*"
-    "@theatre/studio": "workspace:*"
     "@types/jest": ^26.0.23
     "@types/lodash-es": ^4.17.4
     "@types/node": ^15.6.2
@@ -37251,11 +37251,11 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "theatric@workspace:packages/theatric"
   dependencies:
+    "@framewright/core": "workspace:*"
+    "@framewright/dataverse": "workspace:*"
+    "@framewright/react": "workspace:*"
+    "@framewright/studio": "workspace:*"
     "@microsoft/api-extractor": ^7.18.11
-    "@theatre/core": "workspace:*"
-    "@theatre/dataverse": "workspace:*"
-    "@theatre/react": "workspace:*"
-    "@theatre/studio": "workspace:*"
     "@types/jest": ^26.0.23
     "@types/node": ^15.6.2
     "@types/react": ^18.2.18

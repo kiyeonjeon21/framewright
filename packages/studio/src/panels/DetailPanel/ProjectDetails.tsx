@@ -1,14 +1,14 @@
-import type Project from '@theatre/core/projects/Project'
-import getStudio from '@theatre/studio/getStudio'
-import BasicPopover from '@theatre/studio/uiComponents/Popover/BasicPopover'
-import usePopover from '@theatre/studio/uiComponents/Popover/usePopover'
+import type Project from '@framewright/core/projects/Project'
+import getStudio from '@framewright/studio/getStudio'
+import BasicPopover from '@framewright/studio/uiComponents/Popover/BasicPopover'
+import usePopover from '@framewright/studio/uiComponents/Popover/usePopover'
 import React, {useCallback, useState} from 'react'
 import styled from 'styled-components'
-import DetailPanelButton from '@theatre/studio/uiComponents/DetailPanelButton'
+import DetailPanelButton from '@framewright/studio/uiComponents/DetailPanelButton'
 import StateConflictRow from './ProjectDetails/StateConflictRow'
 import JSZip from 'jszip'
-import {notify} from '@theatre/studio/notify'
-import {getAllPossibleAssetIDs} from '@theatre/studio/utils/assets'
+import {notify} from '@framewright/studio/notify'
+import {getAllPossibleAssetIDs} from '@framewright/studio/utils/assets'
 
 const Container = styled.div``
 

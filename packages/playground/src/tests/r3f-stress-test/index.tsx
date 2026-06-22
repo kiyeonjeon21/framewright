@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import theatre from '@theatre/core'
-import extension from '@theatre/r3f/dist/extension'
-import getStudio from '@theatre/studio/getStudio'
+import theatre from '@framewright/core'
+import extension from '@framewright/r3f/dist/extension'
+import getStudio from '@framewright/studio/getStudio'
 
 const studioPrivate = getStudio()
 

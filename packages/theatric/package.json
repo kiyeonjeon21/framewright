@@ -28,8 +28,8 @@
     "clean": "rm -rf ./dist && rm -f tsconfig.tsbuildinfo"
   },
   "devDependencies": {
+    "@framewright/dataverse": "workspace:*",
     "@microsoft/api-extractor": "^7.18.11",
-    "@theatre/dataverse": "workspace:*",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.2",
     "@types/react": "^18.2.18",
@@ -40,9 +40,9 @@
     "typescript": "5.1.6"
   },
   "dependencies": {
-    "@theatre/core": "workspace:*",
-    "@theatre/react": "workspace:*",
-    "@theatre/studio": "workspace:*",
+    "@framewright/core": "workspace:*",
+    "@framewright/react": "workspace:*",
+    "@framewright/studio": "workspace:*",
     "oauth4webapi": "^2.4.0"
   },
   "peerDependencies": {

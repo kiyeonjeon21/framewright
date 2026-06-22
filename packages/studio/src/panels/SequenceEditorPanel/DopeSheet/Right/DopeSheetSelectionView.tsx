@@ -1,31 +1,31 @@
-import getStudio from '@theatre/studio/getStudio'
-import type {CommitOrDiscardOrRecapture} from '@theatre/studio/StudioStore/StudioStore'
-import useDrag from '@theatre/studio/uiComponents/useDrag'
-import useKeyDown from '@theatre/studio/uiComponents/useKeyDown'
-import useValToAtom from '@theatre/studio/uiComponents/useValToAtom'
-import mutableSetDeep from '@theatre/utils/mutableSetDeep'
-import useRefAndState from '@theatre/studio/utils/useRefAndState'
-import {usePrism} from '@theatre/react'
-import type {$IntentionalAny} from '@theatre/core/types/public'
-import type {Pointer} from '@theatre/dataverse'
-import {val} from '@theatre/dataverse'
+import getStudio from '@framewright/studio/getStudio'
+import type {CommitOrDiscardOrRecapture} from '@framewright/studio/StudioStore/StudioStore'
+import useDrag from '@framewright/studio/uiComponents/useDrag'
+import useKeyDown from '@framewright/studio/uiComponents/useKeyDown'
+import useValToAtom from '@framewright/studio/uiComponents/useValToAtom'
+import mutableSetDeep from '@framewright/utils/mutableSetDeep'
+import useRefAndState from '@framewright/studio/utils/useRefAndState'
+import {usePrism} from '@framewright/react'
+import type {$IntentionalAny} from '@framewright/core/types/public'
+import type {Pointer} from '@framewright/dataverse'
+import {val} from '@framewright/dataverse'
 import React, {useMemo, useRef} from 'react'
 import styled from 'styled-components'
 import type {
   DopeSheetSelection,
   SequenceEditorPanelLayout,
-} from '@theatre/studio/panels/SequenceEditorPanel/layout/layout'
+} from '@framewright/studio/panels/SequenceEditorPanel/layout/layout'
 import type {
   SequenceEditorTree_AllRowTypes,
   SequenceEditorTree_PropWithChildren,
   SequenceEditorTree_Sheet,
   SequenceEditorTree_SheetObject,
-} from '@theatre/studio/panels/SequenceEditorPanel/layout/tree'
-import DopeSnap from '@theatre/studio/panels/SequenceEditorPanel/RightOverlay/DopeSnap'
+} from '@framewright/studio/panels/SequenceEditorPanel/layout/tree'
+import DopeSnap from '@framewright/studio/panels/SequenceEditorPanel/RightOverlay/DopeSnap'
 import {collectAggregateKeyframesInPrism} from './collectAggregateKeyframes'
-import type {ILogger, IUtilLogger} from '@theatre/utils/logger'
-import {useLogger} from '@theatre/studio/uiComponents/useLogger'
-import {__private} from '@theatre/core'
+import type {ILogger, IUtilLogger} from '@framewright/utils/logger'
+import {useLogger} from '@framewright/studio/uiComponents/useLogger'
+import {__private} from '@framewright/core'
 
 const {keyframeUtils} = __private
 

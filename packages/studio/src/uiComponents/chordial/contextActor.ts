@@ -1,7 +1,7 @@
-import {basicFSM} from '@theatre/utils/basicFSM'
+import {basicFSM} from '@framewright/utils/basicFSM'
 import type {ChodrialElement} from './chordialInternals'
 import {findChodrialByDomNode} from './chordialInternals'
-import {prism, val} from '@theatre/dataverse'
+import {prism, val} from '@framewright/dataverse'
 
 export const contextActor = basicFSM<
   | {type: 'rclick'; mouseEvent: MouseEvent}

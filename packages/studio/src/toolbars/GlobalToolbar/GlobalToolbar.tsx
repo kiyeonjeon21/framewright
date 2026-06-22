@@ -1,12 +1,12 @@
-import {useVal} from '@theatre/react'
-import getStudio from '@theatre/studio/getStudio'
+import {useVal} from '@framewright/react'
+import getStudio from '@framewright/studio/getStudio'
 import React from 'react'
 import styled from 'styled-components'
-import ExtensionToolbar from '@theatre/studio/toolbars/ExtensionToolbar/ExtensionToolbar'
+import ExtensionToolbar from '@framewright/studio/toolbars/ExtensionToolbar/ExtensionToolbar'
 import {
   useNotifications,
   useEmptyNotificationsTooltip,
-} from '@theatre/studio/notify'
+} from '@framewright/studio/notify'
 import {
   uesConflicts,
   useOutlineTriggerTooltip,

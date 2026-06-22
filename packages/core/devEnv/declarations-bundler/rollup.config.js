@@ -13,7 +13,7 @@ const config = {
     format: 'es',
   },
   external: (s) => {
-    if (s === '@theatre/dataverse') {
+    if (s === '@framewright/dataverse') {
       return true
     }
 
@@ -33,18 +33,18 @@ const config = {
       respectExternal: true,
       compilerOptions: {
         paths: {
-          '@theatre/core': [fromPackage(`.temp/declarations/src`)],
+          '@framewright/core': [fromPackage(`.temp/declarations/src`)],
         },
       },
     }),
     alias({
       entries: [
         {
-          find: `@theatre/core`,
+          find: `@framewright/core`,
           replacement: fromPackage(`.temp/declarations/src`),
         },
         {
-          find: `@theatre/utils`,
+          find: `@framewright/utils`,
           replacement: fromPackages(`utils/src`),
         },
       ],

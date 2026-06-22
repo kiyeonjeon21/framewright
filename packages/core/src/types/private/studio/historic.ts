@@ -1,4 +1,4 @@
-import type {ProjectState_Historic} from '@theatre/core/types/private/core'
+import type {ProjectState_Historic} from '@framewright/core/types/private/core'
 import type {
   ProjectAddress,
   SheetAddress,
@@ -6,20 +6,20 @@ import type {
   WithoutSheetInstance,
   PaneInstanceId,
   SequenceMarkerId,
-} from '@theatre/core/types/public'
-import type {PathToProp_Encoded} from '@theatre/utils/pathToProp'
-import type {StrictRecord} from '@theatre/core/types/public'
-import type {PointableSet} from '@theatre/utils/PointableSet'
+} from '@framewright/core/types/public'
+import type {PathToProp_Encoded} from '@framewright/utils/pathToProp'
+import type {StrictRecord} from '@framewright/core/types/public'
+import type {PointableSet} from '@framewright/utils/PointableSet'
 import type {
   ObjectAddressKey,
   ProjectId,
   SheetId,
   SheetInstanceId,
-} from '@theatre/core/types/public'
+} from '@framewright/core/types/public'
 import type {
   UIPanelId,
   GraphEditorColors,
-} from '@theatre/core/types/private/studio'
+} from '@framewright/core/types/private/studio'
 
 export type PanelPosition = {
   edges: {

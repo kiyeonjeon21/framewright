@@ -1,8 +1,8 @@
-import type {Pointer} from '@theatre/dataverse'
-import {useVal} from '@theatre/react'
-import getStudio from '@theatre/studio/getStudio'
+import type {Pointer} from '@framewright/dataverse'
+import {useVal} from '@framewright/react'
+import getStudio from '@framewright/studio/getStudio'
 import React from 'react'
-import type {SequenceEditorPanelLayout} from '@theatre/studio/panels/SequenceEditorPanel/layout/layout'
+import type {SequenceEditorPanelLayout} from '@framewright/studio/panels/SequenceEditorPanel/layout/layout'
 import MarkerDot from './MarkerDot'
 
 const Markers: React.VFC<{layoutP: Pointer<SequenceEditorPanelLayout>}> = ({

@@ -1,8 +1,8 @@
-import Scrub from '@theatre/studio/Scrub'
-import type {StudioHistoricState} from '@theatre/core/types/private/studio'
-import UI from '@theatre/studio/UI/UI'
-import type {Pointer, Ticker} from '@theatre/dataverse'
-import {Atom, PointerProxy, pointerToPrism} from '@theatre/dataverse'
+import Scrub from '@framewright/studio/Scrub'
+import type {StudioHistoricState} from '@framewright/core/types/private/studio'
+import UI from '@framewright/studio/UI/UI'
+import type {Pointer, Ticker} from '@framewright/dataverse'
+import {Atom, PointerProxy, pointerToPrism} from '@framewright/dataverse'
 import type {
   CommitOrDiscardOrRecapture,
   ITransactionPrivateApi,
@@ -13,32 +13,32 @@ import type {
   IStudio,
   PaneClassDefinition,
   InitOpts,
-} from '@theatre/core/types/public'
+} from '@framewright/core/types/public'
 import TheatreStudio from './TheatreStudio'
 import {nanoid} from 'nanoid/non-secure'
-import type Project from '@theatre/core/projects/Project'
-import type {CoreBits} from '@theatre/core/CoreBundle'
-import SimpleCache from '@theatre/utils/SimpleCache'
-import type {IProject, ISheet, ProjectId} from '@theatre/core'
+import type Project from '@framewright/core/projects/Project'
+import type {CoreBits} from '@framewright/core/CoreBundle'
+import SimpleCache from '@framewright/utils/SimpleCache'
+import type {IProject, ISheet, ProjectId} from '@framewright/core'
 import PaneManager from './PaneManager'
-import type * as _coreExports from '@theatre/core/coreExports'
+import type * as _coreExports from '@framewright/core/coreExports'
 import type {
   OnDiskState,
   ProjectEphemeralState,
-} from '@theatre/core/types/private/core'
-import type {Deferred} from '@theatre/utils/defer'
-import {defer} from '@theatre/utils/defer'
+} from '@framewright/core/types/private/core'
+import type {Deferred} from '@framewright/utils/defer'
+import {defer} from '@framewright/utils/defer'
 import checkForUpdates from './checkForUpdates'
 import shallowEqual from 'shallowequal'
 import {createStore} from './IDBStorage'
-import {getAllPossibleAssetIDs} from '@theatre/studio/utils/assets'
+import {getAllPossibleAssetIDs} from '@framewright/studio/utils/assets'
 import {notify} from './notify'
-import type {RafDriverPrivateAPI} from '@theatre/core/rafDrivers'
-import {persistAtom} from '@theatre/utils/persistAtom'
+import type {RafDriverPrivateAPI} from '@framewright/core/rafDrivers'
+import {persistAtom} from '@framewright/utils/persistAtom'
 import produce from 'immer'
 import Storno from './Storno/Storno'
 import Auth from './Auth'
-import type {$IntentionalAny} from '@theatre/core/types/public'
+import type {$IntentionalAny} from '@framewright/core/types/public'
 import AppLink from './SyncStore/AppLink'
 import SyncServerLink from './SyncStore/SyncServerLink'
 import type {TrpcClientWrapped} from './SyncStore/utils'
@@ -49,28 +49,28 @@ const DEFAULT_PERSISTENCE_KEY = 'theatre-0.4'
 
 export type CoreExports = typeof _coreExports
 
-const STUDIO_NOT_INITIALIZED_MESSAGE = `You seem to have imported '@theatre/studio' but haven't initialized it. You can initialize the studio by:
+const STUDIO_NOT_INITIALIZED_MESSAGE = `You seem to have imported '@framewright/studio' but haven't initialized it. You can initialize the studio by:
 \`\`\`
-import theatre from '@theatre/core'
+import theatre from '@framewright/core'
 theatre.init({studio: true})
 \`\`\`
 
-* If you didn't mean to import '@theatre/studio', this means that your bundler is not tree-shaking it. This is most likely a bundler misconfiguration.
+* If you didn't mean to import '@framewright/studio', this means that your bundler is not tree-shaking it. This is most likely a bundler misconfiguration.
 
-* If you meant to import '@theatre/studio' without showing its UI, you can do that by running:
+* If you meant to import '@framewright/studio' without showing its UI, you can do that by running:
 
 \`\`\`
-import theatre from '@theatre/core'
+import theatre from '@framewright/core'
 theatre.init({studio: true})
 studio.ui.hide()
 \`\`\`
 `
 
-const STUDIO_INITIALIZED_LATE_MSG = `You seem to have imported '@theatre/studio' but called \`studio.initialize()\` after some delay.
+const STUDIO_INITIALIZED_LATE_MSG = `You seem to have imported '@framewright/studio' but called \`studio.initialize()\` after some delay.
 Theatre.js projects remain in pending mode (won't play their sequences) until the studio is initialized, so you should place the \`studio.initialize()\` line right after the import line:
 
 \`\`\`
-import theatre from '@theatre/core'
+import theatre from '@framewright/core'
 // ... and other imports
 
 studio.initialize()
@@ -110,7 +110,7 @@ export class Studio {
   readonly paneManager: PaneManager
 
   /**
-   * An atom holding the exports of '\@theatre/core'. Will be undefined if '\@theatre/core' is never imported
+   * An atom holding the exports of '\@framewright/core'. Will be undefined if '\@framewright/core' is never imported
    */
   private _coreAtom = new Atom<{core?: CoreExports}>({})
 
@@ -153,7 +153,7 @@ export class Studio {
   private _didWarnAboutNotInitializing = false
 
   /**
-   * This will be set as soon as `@theatre/core` registers itself on `@theatre/studio`
+   * This will be set as soon as `@framewright/core` registers itself on `@framewright/studio`
    */
   private _coreBits: CoreBits | undefined
 
@@ -311,7 +311,7 @@ export class Studio {
   async initialize(opts?: InitOpts) {
     if (!this._coreBits) {
       throw new Error(
-        `You seem to have imported \`@theatre/studio\` without importing \`@theatre/core\`. Make sure to include an import of \`@theatre/core\` before calling \`studio.initializer()\`.`,
+        `You seem to have imported \`@framewright/studio\` without importing \`@framewright/core\`. Make sure to include an import of \`@framewright/core\` before calling \`studio.initializer()\`.`,
       )
     }
 
@@ -731,7 +731,7 @@ function sanitizeOpts(
     if (!rafDriverPrivateApi) {
       // TODO - need to educate the user about this edge case
       throw new Error(
-        'parameter `rafDriver` in `theatre.init({studio: true, __experimental_rafDriver})` seems to come from a different version of `@theatre/core` than the version that is attached to `@theatre/studio`',
+        'parameter `rafDriver` in `theatre.init({studio: true, __experimental_rafDriver})` seems to come from a different version of `@framewright/core` than the version that is attached to `@framewright/studio`',
       )
     }
     storeOpts.rafDriver = rafDriverPrivateApi

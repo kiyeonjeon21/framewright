@@ -1,10 +1,10 @@
-import type {IExtension} from '@theatre/core'
-import theatre from '@theatre/core'
-import '@theatre/core'
+import type {IExtension} from '@framewright/core'
+import theatre from '@framewright/core'
+import '@framewright/core'
 import {extensionButton} from '../../shared/utils/useExtensionButton'
 
 const ext1: IExtension = {
-  id: '@theatre/hello-world-extension',
+  id: '@framewright/hello-world-extension',
   toolbars: {},
   panes: [],
 }

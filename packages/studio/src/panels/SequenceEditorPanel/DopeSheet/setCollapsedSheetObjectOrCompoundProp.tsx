@@ -1,9 +1,9 @@
-import getStudio from '@theatre/studio/getStudio'
+import getStudio from '@framewright/studio/getStudio'
 import type {
   SheetAddress,
   WithoutSheetInstance,
-} from '@theatre/core/types/public'
-import type {StudioSheetItemKey} from '@theatre/core/types/private'
+} from '@framewright/core/types/public'
+import type {StudioSheetItemKey} from '@framewright/core/types/private'
 
 export function setCollapsedSheetItem(
   isCollapsed: boolean,

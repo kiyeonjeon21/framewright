@@ -1,14 +1,14 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-import type {IProject, ISheet, ISheetObject} from '@theatre/core/types/public'
-import type Project from '@theatre/core/projects/Project'
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
-import type SheetObjectTemplate from '@theatre/core/sheetObjects/SheetObjectTemplate'
-import type Sheet from '@theatre/core/sheets/Sheet'
-import type SheetTemplate from '@theatre/core/sheets/SheetTemplate'
-import type {$IntentionalAny} from '@theatre/core/types/public'
+import type {IProject, ISheet, ISheetObject} from '@framewright/core/types/public'
+import type Project from '@framewright/core/projects/Project'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
+import type SheetObjectTemplate from '@framewright/core/sheetObjects/SheetObjectTemplate'
+import type Sheet from '@framewright/core/sheets/Sheet'
+import type SheetTemplate from '@framewright/core/sheets/SheetTemplate'
+import type {$IntentionalAny} from '@framewright/core/types/public'
 
 /**
- * Since \@theatre/core and \@theatre/studio are separate bundles,
+ * Since \@framewright/core and \@framewright/studio are separate bundles,
  * they cannot use `x instanceof Y` to detect object types.
  *
  * The functions in this module are supposed to be a replacement for that.

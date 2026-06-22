@@ -1,5 +1,5 @@
 {
-  "name": "@theatre/studio",
+  "name": "@framewright/studio",
   "version": "0.7.0",
   "license": "AGPL-3.0-only",
   "description": "Motion design editor for the web",
@@ -26,19 +26,19 @@
   },
   "sideEffects": true,
   "peerDependencies": {
-    "@theatre/core": "*"
+    "@framewright/core": "*"
   },
   "dependencies": {
-    "@theatre/dataverse": "workspace:*"
+    "@framewright/dataverse": "workspace:*"
   },
   "devDependencies": {
+    "@framewright/app": "workspace:*",
+    "@framewright/react": "workspace:*",
+    "@framewright/saaz": "workspace:*",
+    "@framewright/sync-server": "workspace:*",
+    "@framewright/utils": "workspace:*",
     "@react-spring/web": "^9.7.3",
     "@styled/typescript-styled-plugin": "^1.0.1",
-    "@theatre/app": "workspace:*",
-    "@theatre/react": "workspace:*",
-    "@theatre/saaz": "workspace:*",
-    "@theatre/sync-server": "workspace:*",
-    "@theatre/utils": "workspace:*",
     "@trpc/client": "^10.43.0",
     "@types/jest": "^26.0.24",
     "@types/marked": "^4.0.7",

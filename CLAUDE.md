@@ -17,9 +17,9 @@ packages (`saaz`/`app`/`sync-server`) are the traces of that pivot.
 
 ### ⚠️ Licensing (important — do not change unilaterally)
 
-- `@theatre/core` and most packages = **Apache License 2.0** (runtime, ships in
+- `@framewright/core` and most packages = **Apache License 2.0** (runtime, ships in
   the final bundle)
-- `@theatre/studio` = **AGPL 3.0** (visual editor, strong copyleft)
+- `@framewright/studio` = **AGPL 3.0** (visual editor, strong copyleft)
 - Do **not** relicense (e.g. to MIT) the original files' license headers /
   `LICENSE` / `NOTICE`. Apache requires preserving notices; AGPL's copyleft
   extends to derivatives and network services. You may apply a different license
@@ -43,16 +43,16 @@ New 1.0 cloud axis (mostly stubs):
 
 | Package                                        | Version   | Description                                            |
 | ---------------------------------------------- | --------- | ------------------------------------------------------ |
-| `@theatre/dataverse`                           | 0.7.0     | Reactive dataflow (FRP) foundation library             |
-| `@theatre/core`                                | 0.7.0     | Animation engine + public API (Apache)                 |
-| `@theatre/studio`                              | 0.7.0     | Visual editor (AGPL)                                   |
-| `@theatre/react`                               | 0.7.0     | React hook bindings                                    |
-| `@theatre/r3f`                                 | 0.7.0     | react-three-fiber / THREE.js 3D extension              |
+| `@framewright/dataverse`                           | 0.7.0     | Reactive dataflow (FRP) foundation library             |
+| `@framewright/core`                                | 0.7.0     | Animation engine + public API (Apache)                 |
+| `@framewright/studio`                              | 0.7.0     | Visual editor (AGPL)                                   |
+| `@framewright/react`                               | 0.7.0     | React hook bindings                                    |
+| `@framewright/r3f`                                 | 0.7.0     | react-three-fiber / THREE.js 3D extension              |
 | `theatric`                                     | 0.7.0     | Lightweight `useControls()` wrapper                    |
-| `@theatre/browser-bundles`                     | 0.7.0     | UMD bundles                                            |
-| `@theatre/saaz`                                | 0.7.0     | Collaborative sync/state engine (new)                  |
-| `@theatre/app`                                 | **0.1.0** | Next.js cloud web app (new, **unfinished stub**)       |
-| `@theatre/sync-server`                         | **0.1.0** | Sync backend (new, **DB persistence not implemented**) |
+| `@framewright/browser-bundles`                     | 0.7.0     | UMD bundles                                            |
+| `@framewright/saaz`                                | 0.7.0     | Collaborative sync/state engine (new)                  |
+| `@framewright/app`                                 | **0.1.0** | Next.js cloud web app (new, **unfinished stub**)       |
+| `@framewright/sync-server`                         | **0.1.0** | Sync backend (new, **DB persistence not implemented**) |
 | `playground`                                   | —         | Vite dev/experiment environment + e2e tests            |
 | `benchmarks`, `utils`, `dataverse-experiments` | —         | Auxiliary                                              |
 

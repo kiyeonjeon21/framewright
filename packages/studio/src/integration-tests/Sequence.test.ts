@@ -1,10 +1,10 @@
-import {setupTestSheet} from '@theatre/studio/integration-tests/testUtils'
-import {encodePathToProp} from '@theatre/utils/pathToProp'
+import {setupTestSheet} from '@framewright/studio/integration-tests/testUtils'
+import {encodePathToProp} from '@framewright/utils/pathToProp'
 import type {
   ObjectAddressKey,
   SequenceTrackId,
-} from '@theatre/core/types/public'
-import {__private} from '@theatre/core'
+} from '@framewright/core/types/public'
+import {__private} from '@framewright/core'
 
 const {keyframeUtils} = __private
 

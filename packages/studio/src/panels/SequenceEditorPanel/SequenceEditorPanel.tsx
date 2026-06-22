@@ -1,8 +1,8 @@
-import {outlineSelection} from '@theatre/studio/selectors'
-import {usePrism} from '@theatre/react'
-import {valToAtom} from '@theatre/utils/valToAtom'
-import type {Pointer} from '@theatre/dataverse'
-import {prism, val} from '@theatre/dataverse'
+import {outlineSelection} from '@framewright/studio/selectors'
+import {usePrism} from '@framewright/react'
+import {valToAtom} from '@framewright/utils/valToAtom'
+import type {Pointer} from '@framewright/dataverse'
+import {prism, val} from '@framewright/dataverse'
 import React, {useState} from 'react'
 import styled from 'styled-components'
 
@@ -11,13 +11,13 @@ import GraphEditor from './GraphEditor/GraphEditor'
 import type {PanelDims, SequenceEditorPanelLayout} from './layout/layout'
 import {sequenceEditorPanelLayout} from './layout/layout'
 import RightOverlay from './RightOverlay/RightOverlay'
-import BasePanel, {usePanel} from '@theatre/studio/panels/BasePanel/BasePanel'
-import type {PanelPosition} from '@theatre/core/types/private'
-import PanelDragZone from '@theatre/studio/panels/BasePanel/PanelDragZone'
-import PanelWrapper from '@theatre/studio/panels/BasePanel/PanelWrapper'
+import BasePanel, {usePanel} from '@framewright/studio/panels/BasePanel/BasePanel'
+import type {PanelPosition} from '@framewright/core/types/private'
+import PanelDragZone from '@framewright/studio/panels/BasePanel/PanelDragZone'
+import PanelWrapper from '@framewright/studio/panels/BasePanel/PanelWrapper'
 import FrameStampPositionProvider from './FrameStampPositionProvider'
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
-import type Sheet from '@theatre/core/sheets/Sheet'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
+import type Sheet from '@framewright/core/sheets/Sheet'
 import {uniq} from 'lodash-es'
 import GraphEditorToggle from './GraphEditorToggle'
 import {
@@ -25,10 +25,10 @@ import {
   TitleBar,
   TitleBar_Piece,
   TitleBar_Punctuation,
-} from '@theatre/studio/panels/BasePanel/common'
-import {usePresenceListenersOnRootElement} from '@theatre/studio/uiComponents/usePresence'
-import type {UIPanelId} from '@theatre/core/types/private'
-import {__private} from '@theatre/core'
+} from '@framewright/studio/panels/BasePanel/common'
+import {usePresenceListenersOnRootElement} from '@framewright/studio/uiComponents/usePresence'
+import type {UIPanelId} from '@framewright/core/types/private'
+import {__private} from '@framewright/core'
 const {isSheet, isSheetObject} = __private.instanceTypes
 
 const Container = styled(PanelWrapper)`

@@ -1,5 +1,5 @@
-import type {IProject, ISheet} from '@theatre/core'
-import {getStudioSync} from '@theatre/core'
+import type {IProject, ISheet} from '@framewright/core'
+import {getStudioSync} from '@framewright/core'
 import {remote} from './Remote'
 import type {BroadcastData, BroadcastDataEvent} from './Remote'
 

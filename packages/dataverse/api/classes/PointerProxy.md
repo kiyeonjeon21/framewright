@@ -1,4 +1,4 @@
-[@theatre/dataverse](../README.md) / PointerProxy
+[@framewright/dataverse](../README.md) / PointerProxy
 
 # Class: PointerProxy<O\>
 

@@ -1,5 +1,5 @@
-import theatre from '@theatre/core'
-import {getProject} from '@theatre/core'
+import theatre from '@framewright/core'
+import {getProject} from '@framewright/core'
 
 void theatre.init({
   studio: true,

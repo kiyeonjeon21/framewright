@@ -1,7 +1,7 @@
-import type Project from '@theatre/core/projects/Project'
-import type Sequence from '@theatre/core/sequences/Sequence'
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
-import type Sheet from '@theatre/core/sheets/Sheet'
+import type Project from '@framewright/core/projects/Project'
+import type Sequence from '@framewright/core/sequences/Sequence'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
+import type Sheet from '@framewright/core/sheets/Sheet'
 import type {RafDriverPrivateAPI} from './rafDrivers'
 import type {
   IProject,
@@ -11,7 +11,7 @@ import type {
   ISheetObject,
   UnknownShorthandCompoundProps,
 } from './types/public'
-import type {$IntentionalAny} from '@theatre/core/types/public'
+import type {$IntentionalAny} from '@framewright/core/types/public'
 
 const publicAPIToPrivateAPIMap = new WeakMap()
 

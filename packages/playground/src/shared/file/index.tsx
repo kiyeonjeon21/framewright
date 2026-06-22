@@ -1,5 +1,5 @@
-import {getProject, types} from '@theatre/core'
-import theatre from '@theatre/core'
+import {getProject, types} from '@framewright/core'
+import theatre from '@framewright/core'
 import React, {useEffect, useState} from 'react'
 import ReactDom from 'react-dom/client'
 import styled from 'styled-components'

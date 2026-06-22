@@ -1,9 +1,9 @@
-import {useVal} from '@theatre/react'
-import type {$IntentionalAny} from '@theatre/core/types/public'
-import getStudio from '@theatre/studio/getStudio'
+import {useVal} from '@framewright/react'
+import type {$IntentionalAny} from '@framewright/core/types/public'
+import getStudio from '@framewright/studio/getStudio'
 import React from 'react'
 import styled from 'styled-components'
-import {env} from '@theatre/studio/env'
+import {env} from '@framewright/studio/env'
 
 const Container = styled.div`
   width: 138px;

@@ -1,7 +1,7 @@
-import type {PropTypeConfig_StringLiteral} from '@theatre/core/types/public'
+import type {PropTypeConfig_StringLiteral} from '@framewright/core/types/public'
 import React, {useCallback} from 'react'
-import BasicSwitch from '@theatre/studio/uiComponents/form/BasicSwitch'
-import BasicSelect from '@theatre/studio/uiComponents/form/BasicSelect'
+import BasicSwitch from '@framewright/studio/uiComponents/form/BasicSwitch'
+import BasicSelect from '@framewright/studio/uiComponents/form/BasicSelect'
 import type {ISimplePropEditorReactProps} from './ISimplePropEditorReactProps'
 
 function StringLiteralPropEditor<TLiteralOptions extends string>({

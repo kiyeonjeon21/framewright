@@ -1,5 +1,5 @@
-import type {IProject, ISheet, ISheetObject} from '@theatre/core'
-import type {VoidFn} from '@theatre/dataverse/src/types'
+import type {IProject, ISheet, ISheetObject} from '@framewright/core'
+import type {VoidFn} from '@framewright/dataverse/src/types'
 
 export type TheatreUpdateCallback = (data: any) => void
 

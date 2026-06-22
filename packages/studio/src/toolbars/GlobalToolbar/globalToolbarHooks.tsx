@@ -1,11 +1,11 @@
-import {usePrism, useVal} from '@theatre/react'
-import getStudio from '@theatre/studio/getStudio'
+import {usePrism, useVal} from '@framewright/react'
+import getStudio from '@framewright/studio/getStudio'
 import React, {useMemo, useRef} from 'react'
-import useTooltip from '@theatre/studio/uiComponents/Popover/useTooltip'
-import ErrorTooltip from '@theatre/studio/uiComponents/Popover/ErrorTooltip'
-import BasicTooltip from '@theatre/studio/uiComponents/Popover/BasicTooltip'
-import {val} from '@theatre/dataverse'
-import usePopover from '@theatre/studio/uiComponents/Popover/usePopover'
+import useTooltip from '@framewright/studio/uiComponents/Popover/useTooltip'
+import ErrorTooltip from '@framewright/studio/uiComponents/Popover/ErrorTooltip'
+import BasicTooltip from '@framewright/studio/uiComponents/Popover/BasicTooltip'
+import {val} from '@framewright/dataverse'
+import usePopover from '@framewright/studio/uiComponents/Popover/usePopover'
 import MoreMenu from './MoreMenu/MoreMenu'
 
 let showedVisualTestingWarning = false

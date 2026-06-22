@@ -1,1 +1,1 @@
-`@theatre/utils`
+`@framewright/utils`

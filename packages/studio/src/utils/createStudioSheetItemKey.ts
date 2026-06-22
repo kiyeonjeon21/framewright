@@ -1,9 +1,9 @@
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
-import type {PathToProp} from '@theatre/utils/pathToProp'
-import stableValueHash from '@theatre/utils/stableJsonStringify'
-import type Sheet from '@theatre/core/sheets/Sheet'
-import type {KeyframeId, SequenceTrackId} from '@theatre/core/types/public'
-import type {StudioSheetItemKey} from '@theatre/core/types/private'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
+import type {PathToProp} from '@framewright/utils/pathToProp'
+import stableValueHash from '@framewright/utils/stableJsonStringify'
+import type Sheet from '@framewright/core/sheets/Sheet'
+import type {KeyframeId, SequenceTrackId} from '@framewright/core/types/public'
+import type {StudioSheetItemKey} from '@framewright/core/types/private'
 
 /**
  * This will not necessarily maintain consistent key values if any

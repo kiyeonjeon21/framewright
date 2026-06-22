@@ -1,24 +1,24 @@
-import {usePrism} from '@theatre/react'
-import type {Pointer} from '@theatre/dataverse'
-import {val} from '@theatre/dataverse'
+import {usePrism} from '@framewright/react'
+import type {Pointer} from '@framewright/dataverse'
+import {val} from '@framewright/dataverse'
 import React, {useMemo, useRef} from 'react'
 import styled from 'styled-components'
-import type {SequenceEditorPanelLayout} from '@theatre/studio/panels/SequenceEditorPanel/layout/layout'
-import {zIndexes} from '@theatre/studio/panels/SequenceEditorPanel/SequenceEditorPanel'
-import {topStripHeight} from '@theatre/studio/panels/SequenceEditorPanel/RightOverlay/TopStrip'
-import useRefAndState from '@theatre/studio/utils/useRefAndState'
-import type {CommitOrDiscardOrRecapture} from '@theatre/studio/StudioStore/StudioStore'
-import useDrag from '@theatre/studio/uiComponents/useDrag'
-import getStudio from '@theatre/studio/getStudio'
-import usePopover from '@theatre/studio/uiComponents/Popover/usePopover'
+import type {SequenceEditorPanelLayout} from '@framewright/studio/panels/SequenceEditorPanel/layout/layout'
+import {zIndexes} from '@framewright/studio/panels/SequenceEditorPanel/SequenceEditorPanel'
+import {topStripHeight} from '@framewright/studio/panels/SequenceEditorPanel/RightOverlay/TopStrip'
+import useRefAndState from '@framewright/studio/utils/useRefAndState'
+import type {CommitOrDiscardOrRecapture} from '@framewright/studio/StudioStore/StudioStore'
+import useDrag from '@framewright/studio/uiComponents/useDrag'
+import getStudio from '@framewright/studio/getStudio'
+import usePopover from '@framewright/studio/uiComponents/Popover/usePopover'
 import {
   includeLockFrameStampAttrs,
   useLockFrameStampPosition,
-} from '@theatre/studio/panels/SequenceEditorPanel/FrameStampPositionProvider'
+} from '@framewright/studio/panels/SequenceEditorPanel/FrameStampPositionProvider'
 import {GoChevronLeft, GoChevronRight} from 'react-icons/go'
 import LengthEditorPopover from './LengthEditorPopover'
-import {pointerEventsAutoInNormalMode} from '@theatre/studio/css'
-import BasicPopover from '@theatre/studio/uiComponents/Popover/BasicPopover'
+import {pointerEventsAutoInNormalMode} from '@framewright/studio/css'
+import BasicPopover from '@framewright/studio/uiComponents/Popover/BasicPopover'
 
 const coverWidth = 1000
 

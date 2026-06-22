@@ -1,9 +1,9 @@
-import type {$IntentionalAny} from '@theatre/core/types/public'
+import type {$IntentionalAny} from '@framewright/core/types/public'
 import type {
   PropTypeConfig,
   PropTypeConfig_Compound,
-} from '@theatre/core/types/public'
-import {isPropConfigComposite} from '@theatre/core/propTypes/utils'
+} from '@framewright/core/types/public'
+import {isPropConfigComposite} from '@framewright/core/propTypes/utils'
 
 type EncodedPropPath = string
 type Order = number

@@ -1,4 +1,4 @@
-import type {$IntentionalAny} from '@theatre/core/types/public'
+import type {$IntentionalAny} from '@framewright/core/types/public'
 import {useEffect} from 'react'
 
 export default function useOnClickOutside(

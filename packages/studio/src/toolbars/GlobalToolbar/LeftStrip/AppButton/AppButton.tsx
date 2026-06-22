@@ -1,10 +1,10 @@
-import {pointerEventsAutoInNormalMode} from '@theatre/studio/css'
-import useChordial from '@theatre/studio/uiComponents/chordial/useChodrial'
+import {pointerEventsAutoInNormalMode} from '@framewright/studio/css'
+import useChordial from '@framewright/studio/uiComponents/chordial/useChodrial'
 import React from 'react'
 import styled from 'styled-components'
-import logo from '@theatre/studio/assets/logo.png'
-import DropdownChevron from '@theatre/studio/uiComponents/icons/DropdownChevron'
-import BaseMenu from '@theatre/studio/uiComponents/simpleContextMenu/ContextMenu/BaseMenu'
+import logo from '@framewright/studio/assets/logo.png'
+import DropdownChevron from '@framewright/studio/uiComponents/icons/DropdownChevron'
+import BaseMenu from '@framewright/studio/uiComponents/simpleContextMenu/ContextMenu/BaseMenu'
 
 const Container = styled.div`
   height: 100%;

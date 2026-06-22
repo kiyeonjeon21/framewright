@@ -1,12 +1,12 @@
-import type {ISequencePositionFormatter} from '@theatre/core/sequences/Sequence'
-import type {SequenceEditorPanelLayout} from '@theatre/studio/panels/SequenceEditorPanel/layout/layout'
-import type {Pointer} from '@theatre/dataverse'
-import {prism, val} from '@theatre/dataverse'
+import type {ISequencePositionFormatter} from '@framewright/core/sequences/Sequence'
+import type {SequenceEditorPanelLayout} from '@framewright/studio/panels/SequenceEditorPanel/layout/layout'
+import type {Pointer} from '@framewright/dataverse'
+import {prism, val} from '@framewright/dataverse'
 import {darken} from 'polished'
 import React, {useLayoutEffect, useRef, useState} from 'react'
 import styled from 'styled-components'
 import createGrid from './createGrid'
-import getStudio from '@theatre/studio/getStudio'
+import getStudio from '@framewright/studio/getStudio'
 
 const Container = styled.div`
   position: absolute;

@@ -1,4 +1,4 @@
-import {basicFSM} from '@theatre/utils/basicFSM'
+import {basicFSM} from '@framewright/utils/basicFSM'
 
 export const mousedownActor = basicFSM<[isDown: boolean], boolean>((t) => {
   function toggle(original: boolean) {

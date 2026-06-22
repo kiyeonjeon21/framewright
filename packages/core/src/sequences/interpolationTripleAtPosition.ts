@@ -1,12 +1,12 @@
 import type {
   BasicKeyframedTrack,
   TrackData,
-} from '@theatre/core/types/private/core'
-import type {Prism, Pointer} from '@theatre/dataverse'
-import {prism, val} from '@theatre/dataverse'
+} from '@framewright/core/types/private/core'
+import type {Prism, Pointer} from '@framewright/dataverse'
+import {prism, val} from '@framewright/dataverse'
 import UnitBezier from 'timing-function/lib/UnitBezier'
-import type {BasicKeyframe, SerializableValue} from '@theatre/core'
-import {getSortedKeyframesCached} from '@theatre/core/utils/keyframeUtils'
+import type {BasicKeyframe, SerializableValue} from '@framewright/core'
+import {getSortedKeyframesCached} from '@framewright/core/utils/keyframeUtils'
 
 /** `left` and `right` are not necessarily the same type.  */
 export type InterpolationTriple = {

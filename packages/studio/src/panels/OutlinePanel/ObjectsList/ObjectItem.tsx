@@ -1,10 +1,10 @@
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
-import getStudio from '@theatre/studio/getStudio'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
+import getStudio from '@framewright/studio/getStudio'
 import React from 'react'
-import BaseItem from '@theatre/studio/panels/OutlinePanel/BaseItem'
-import {useVal} from '@theatre/react'
-import {outlineSelection} from '@theatre/studio/selectors'
-import useChordial from '@theatre/studio/uiComponents/chordial/useChodrial'
+import BaseItem from '@framewright/studio/panels/OutlinePanel/BaseItem'
+import {useVal} from '@framewright/react'
+import {outlineSelection} from '@framewright/studio/selectors'
+import useChordial from '@framewright/studio/uiComponents/chordial/useChodrial'
 
 export const ObjectItem: React.VFC<{
   sheetObject: SheetObject

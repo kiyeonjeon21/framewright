@@ -1,19 +1,19 @@
-import type Project from '@theatre/core/projects/Project'
-import type Sheet from '@theatre/core/sheets/Sheet'
-import {encodePathToProp} from '@theatre/utils/pathToProp'
-import type {BasicKeyframe, SequenceAddress} from '@theatre/core/types/public'
-import didYouMean from '@theatre/utils/didYouMean'
-import {InvalidArgumentError} from '@theatre/utils/errors'
+import type Project from '@framewright/core/projects/Project'
+import type Sheet from '@framewright/core/sheets/Sheet'
+import {encodePathToProp} from '@framewright/utils/pathToProp'
+import type {BasicKeyframe, SequenceAddress} from '@framewright/core/types/public'
+import didYouMean from '@framewright/utils/didYouMean'
+import {InvalidArgumentError} from '@framewright/utils/errors'
 import type {
   Prism,
   Pointer,
   Ticker,
   PointerToPrismProvider,
-} from '@theatre/dataverse'
-import {getPointerParts} from '@theatre/dataverse'
-import {Atom} from '@theatre/dataverse'
-import {pointer} from '@theatre/dataverse'
-import {prism, val} from '@theatre/dataverse'
+} from '@framewright/dataverse'
+import {getPointerParts} from '@framewright/dataverse'
+import {Atom} from '@framewright/dataverse'
+import {pointer} from '@framewright/dataverse'
+import {prism, val} from '@framewright/dataverse'
 import {padStart} from 'lodash-es'
 import type {
   IPlaybackController,
@@ -26,11 +26,11 @@ import type {
   IPlaybackDirection,
   IPlaybackRange,
   ISequence,
-} from '@theatre/core/types/public'
-import {notify} from '@theatre/core/utils/notify'
-import type {$IntentionalAny} from '@theatre/dataverse/src/types'
-import {isSheetObject} from '@theatre/core/utils/instanceTypes'
-import {getSortedKeyframesCached} from '@theatre/core/utils/keyframeUtils'
+} from '@framewright/core/types/public'
+import {notify} from '@framewright/core/utils/notify'
+import type {$IntentionalAny} from '@framewright/dataverse/src/types'
+import {isSheetObject} from '@framewright/core/utils/instanceTypes'
+import {getSortedKeyframesCached} from '@framewright/core/utils/keyframeUtils'
 
 const possibleDirections = [
   'normal',

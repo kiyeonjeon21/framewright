@@ -1,35 +1,35 @@
-import type {ISheet, ISheetObject} from '@theatre/core'
-import type {Prism, Pointer} from '@theatre/dataverse'
-import {getPointerParts, prism} from '@theatre/dataverse'
-import SimpleCache from '@theatre/utils/SimpleCache'
-import type {$IntentionalAny, VoidFn} from '@theatre/core/types/public'
-import type {IScrub} from '@theatre/core/types/public'
-import type {Studio} from '@theatre/studio/Studio'
+import type {ISheet, ISheetObject} from '@framewright/core'
+import type {Prism, Pointer} from '@framewright/dataverse'
+import {getPointerParts, prism} from '@framewright/dataverse'
+import SimpleCache from '@framewright/utils/SimpleCache'
+import type {$IntentionalAny, VoidFn} from '@framewright/core/types/public'
+import type {IScrub} from '@framewright/core/types/public'
+import type {Studio} from '@framewright/studio/Studio'
 import {outlineSelection} from './selectors'
-import type SheetObject from '@theatre/core/sheetObjects/SheetObject'
+import type SheetObject from '@framewright/core/sheetObjects/SheetObject'
 import getStudio from './getStudio'
 import {debounce, uniq} from 'lodash-es'
-import type Sheet from '@theatre/core/sheets/Sheet'
+import type Sheet from '@framewright/core/sheets/Sheet'
 import type {
   IExtension,
   IStudio,
   ITransactionAPI,
   PaneInstance,
   ProjectId,
-} from '@theatre/core/types/public'
+} from '@framewright/core/types/public'
 import {
   __experimental_disablePlayPauseKeyboardShortcut,
   __experimental_enablePlayPauseKeyboardShortcut,
 } from './UIRoot/useKeyboardShortcuts'
-import type TheatreSheetObject from '@theatre/core/sheetObjects/TheatreSheetObject'
-import type TheatreSheet from '@theatre/core/sheets/TheatreSheet'
-import type {__UNSTABLE_Project_OnDiskState} from '@theatre/core'
-import type {OutlineSelectionState} from '@theatre/core/types/private/studio'
-import type Project from '@theatre/core/projects/Project'
-import type SheetTemplate from '@theatre/core/sheets/SheetTemplate'
-import type SheetObjectTemplate from '@theatre/core/sheetObjects/SheetObjectTemplate'
-import type {PaneInstanceId} from '@theatre/core/types/public'
-import {__private} from '@theatre/core'
+import type TheatreSheetObject from '@framewright/core/sheetObjects/TheatreSheetObject'
+import type TheatreSheet from '@framewright/core/sheets/TheatreSheet'
+import type {__UNSTABLE_Project_OnDiskState} from '@framewright/core'
+import type {OutlineSelectionState} from '@framewright/core/types/private/studio'
+import type Project from '@framewright/core/projects/Project'
+import type SheetTemplate from '@framewright/core/sheets/SheetTemplate'
+import type SheetObjectTemplate from '@framewright/core/sheetObjects/SheetObjectTemplate'
+import type {PaneInstanceId} from '@framewright/core/types/public'
+import {__private} from '@framewright/core'
 const {
   isSheet,
   isProject,
@@ -224,9 +224,9 @@ export default class TheatreStudio implements IStudio {
   getStudioProject() {
     const core = getStudio().core
     if (!core) {
-      throw new Error(`You're calling studio.getStudioProject() before \`@theatre/core\` is loaded. To fix this:
-1. Check if \`@theatre/core\` is import/required in your bundle.
-2. Check the stack trace of this error and make sure the funciton that calls getStudioProject() is run after \`@theatre/core\` is loaded.`)
+      throw new Error(`You're calling studio.getStudioProject() before \`@framewright/core\` is loaded. To fix this:
+1. Check if \`@framewright/core\` is import/required in your bundle.
+2. Check the stack trace of this error and make sure the funciton that calls getStudioProject() is run after \`@framewright/core\` is loaded.`)
     }
     return getStudio().getStudioProject(core)
   }

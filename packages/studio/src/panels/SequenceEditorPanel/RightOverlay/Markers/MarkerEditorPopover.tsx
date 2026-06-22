@@ -1,14 +1,14 @@
-import type {Pointer} from '@theatre/dataverse'
+import type {Pointer} from '@framewright/dataverse'
 import React, {useLayoutEffect, useMemo, useRef} from 'react'
 import styled from 'styled-components'
-import type {SequenceEditorPanelLayout} from '@theatre/studio/panels/SequenceEditorPanel/layout/layout'
-import {useVal} from '@theatre/react'
-import getStudio from '@theatre/studio/getStudio'
-import type {BasicNumberInputNudgeFn} from '@theatre/studio/uiComponents/form/BasicNumberInput'
-import type {CommitOrDiscardOrRecapture} from '@theatre/studio/StudioStore/StudioStore'
-import {propNameTextCSS} from '@theatre/studio/propEditors/utils/propNameTextCSS'
-import type {StudioHistoricStateSequenceEditorMarker} from '@theatre/core/types/private'
-import BasicStringInput from '@theatre/studio/uiComponents/form/BasicStringInput'
+import type {SequenceEditorPanelLayout} from '@framewright/studio/panels/SequenceEditorPanel/layout/layout'
+import {useVal} from '@framewright/react'
+import getStudio from '@framewright/studio/getStudio'
+import type {BasicNumberInputNudgeFn} from '@framewright/studio/uiComponents/form/BasicNumberInput'
+import type {CommitOrDiscardOrRecapture} from '@framewright/studio/StudioStore/StudioStore'
+import {propNameTextCSS} from '@framewright/studio/propEditors/utils/propNameTextCSS'
+import type {StudioHistoricStateSequenceEditorMarker} from '@framewright/core/types/private'
+import BasicStringInput from '@framewright/studio/uiComponents/form/BasicStringInput'
 
 const Container = styled.div`
   display: flex;

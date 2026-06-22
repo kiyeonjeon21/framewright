@@ -1,12 +1,12 @@
-import {setupTestSheet} from '@theatre/studio/integration-tests/testUtils'
-import {encodePathToProp} from '@theatre/utils/pathToProp'
+import {setupTestSheet} from '@framewright/studio/integration-tests/testUtils'
+import {encodePathToProp} from '@framewright/utils/pathToProp'
 import type {
   ObjectAddressKey,
   SequenceTrackId,
-} from '@theatre/core/types/public'
-import {iterateOver, prism} from '@theatre/dataverse'
-import type {SheetState_Historic} from '@theatre/core/types/private/core'
-import {__private} from '@theatre/core'
+} from '@framewright/core/types/public'
+import {iterateOver, prism} from '@framewright/dataverse'
+import type {SheetState_Historic} from '@framewright/core/types/private/core'
+import {__private} from '@framewright/core'
 
 const {keyframeUtils} = __private
 

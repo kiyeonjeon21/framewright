@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {pointerEventsAutoInNormalMode} from '@theatre/studio/css'
-import type {ToolConfigSwitch} from '@theatre/core/types/public'
-import ToolbarSwitchSelect from '@theatre/studio/uiComponents/toolbar/ToolbarSwitchSelect'
+import {pointerEventsAutoInNormalMode} from '@framewright/studio/css'
+import type {ToolConfigSwitch} from '@framewright/core/types/public'
+import ToolbarSwitchSelect from '@framewright/studio/uiComponents/toolbar/ToolbarSwitchSelect'
 
 const IconContainer = styled.div`
   ${pointerEventsAutoInNormalMode};

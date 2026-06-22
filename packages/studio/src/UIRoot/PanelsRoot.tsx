@@ -1,10 +1,10 @@
-import OutlinePanel from '@theatre/studio/panels/OutlinePanel/OutlinePanel'
-import DetailPanel from '@theatre/studio/panels/DetailPanel/DetailPanel'
+import OutlinePanel from '@framewright/studio/panels/OutlinePanel/OutlinePanel'
+import DetailPanel from '@framewright/studio/panels/DetailPanel/DetailPanel'
 import React from 'react'
-import getStudio from '@theatre/studio/getStudio'
-import {useVal} from '@theatre/react'
-import ExtensionPaneWrapper from '@theatre/studio/panels/BasePanel/ExtensionPaneWrapper'
-import SequenceEditorPanel from '@theatre/studio/panels/SequenceEditorPanel/SequenceEditorPanel'
+import getStudio from '@framewright/studio/getStudio'
+import {useVal} from '@framewright/react'
+import ExtensionPaneWrapper from '@framewright/studio/panels/BasePanel/ExtensionPaneWrapper'
+import SequenceEditorPanel from '@framewright/studio/panels/SequenceEditorPanel/SequenceEditorPanel'
 
 const PanelsRoot: React.FC = () => {
   const panes = useVal(getStudio().paneManager.allPanesD)

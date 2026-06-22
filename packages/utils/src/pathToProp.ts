@@ -1,5 +1,5 @@
-import memoizeFn from '@theatre/utils/memoizeFn'
-import type {Nominal} from '@theatre/utils/Nominal'
+import memoizeFn from '@framewright/utils/memoizeFn'
+import type {Nominal} from '@framewright/utils/Nominal'
 
 /**
  * This is a simple array representing the path to a prop, without specifying the object.

@@ -1,11 +1,11 @@
-import type {$FixMe} from '@theatre/core/types/public'
+import type {$FixMe} from '@framewright/core/types/public'
 import {useLayoutEffect, useRef} from 'react'
 import {useCssCursorLock} from './PointerEventsHandler'
-import type {CapturedPointer} from '@theatre/studio/UIRoot/PointerCapturing'
-import {usePointerCapturing} from '@theatre/studio/UIRoot/PointerCapturing'
-import noop from '@theatre/utils/noop'
+import type {CapturedPointer} from '@framewright/studio/UIRoot/PointerCapturing'
+import {usePointerCapturing} from '@framewright/studio/UIRoot/PointerCapturing'
+import noop from '@framewright/utils/noop'
 import {isSafari} from './isSafari'
-import useRefAndState from '@theatre/studio/utils/useRefAndState'
+import useRefAndState from '@framewright/studio/utils/useRefAndState'
 
 export enum MouseButton {
   Left = 0,

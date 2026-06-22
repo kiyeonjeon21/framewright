@@ -1,16 +1,16 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-restricted-syntax */
-import '@theatre/studio'
-import type {SheetId} from '@theatre/core'
-import {getProject} from '@theatre/core'
-import {privateAPI} from '@theatre/core/privateAPIs'
-import type {ProjectState_Historic} from '@theatre/core/types/private/core'
-import type {SheetState_Historic} from '@theatre/core/types/private/core'
-import * as t from '@theatre/core/propTypes'
-import getStudio from '@theatre/studio/getStudio'
-import {getCoreTicker} from '@theatre/core/coreTicker'
-import {globals} from '@theatre/core/globals'
-import theatre from '@theatre/core'
+import '@framewright/studio'
+import type {SheetId} from '@framewright/core'
+import {getProject} from '@framewright/core'
+import {privateAPI} from '@framewright/core/privateAPIs'
+import type {ProjectState_Historic} from '@framewright/core/types/private/core'
+import type {SheetState_Historic} from '@framewright/core/types/private/core'
+import * as t from '@framewright/core/propTypes'
+import getStudio from '@framewright/studio/getStudio'
+import {getCoreTicker} from '@framewright/core/coreTicker'
+import {globals} from '@framewright/core/globals'
+import theatre from '@framewright/core'
 
 const defaultProps = {
   position: {

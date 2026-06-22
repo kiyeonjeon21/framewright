@@ -1,5 +1,5 @@
-import {outlineSelection} from '@theatre/studio/selectors'
-import {usePrism, useVal} from '@theatre/react'
+import {outlineSelection} from '@framewright/studio/selectors'
+import {usePrism, useVal} from '@framewright/react'
 import React, {
   createContext,
   useContext,
@@ -12,17 +12,17 @@ import {
   panelZIndexes,
   TitleBar_Piece,
   TitleBar_Punctuation,
-} from '@theatre/studio/panels/BasePanel/common'
-import {pointerEventsAutoInNormalMode} from '@theatre/studio/css'
+} from '@framewright/studio/panels/BasePanel/common'
+import {pointerEventsAutoInNormalMode} from '@framewright/studio/css'
 import ObjectDetails from './ObjectDetails'
 import ProjectDetails from './ProjectDetails'
-import getStudio from '@theatre/studio/getStudio'
-import useHotspot from '@theatre/studio/uiComponents/useHotspot'
-import {Atom, prism, val} from '@theatre/dataverse'
+import getStudio from '@framewright/studio/getStudio'
+import useHotspot from '@framewright/studio/uiComponents/useHotspot'
+import {Atom, prism, val} from '@framewright/dataverse'
 import EmptyState from './EmptyState'
-import useLockSet from '@theatre/studio/uiComponents/useLockSet'
-import {usePresenceListenersOnRootElement} from '@theatre/studio/uiComponents/usePresence'
-import {__private} from '@theatre/core'
+import useLockSet from '@framewright/studio/uiComponents/useLockSet'
+import {usePresenceListenersOnRootElement} from '@framewright/studio/uiComponents/usePresence'
+import {__private} from '@framewright/core'
 const {isProject, isSheetObject} = __private.instanceTypes
 
 const headerHeight = `32px`

@@ -1,10 +1,10 @@
-import UIRoot from '@theatre/studio/UIRoot/UIRoot'
-import type {$IntentionalAny} from '@theatre/core/types/public'
+import UIRoot from '@framewright/studio/UIRoot/UIRoot'
+import type {$IntentionalAny} from '@framewright/core/types/public'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {getMounter} from '@theatre/studio/utils/renderInPortalInContext'
-import {withStyledShadow} from '@theatre/studio/css'
-import ExtensionToolbar from '@theatre/studio/toolbars/ExtensionToolbar/ExtensionToolbar'
+import {getMounter} from '@framewright/studio/utils/renderInPortalInContext'
+import {withStyledShadow} from '@framewright/studio/css'
+import ExtensionToolbar from '@framewright/studio/toolbars/ExtensionToolbar/ExtensionToolbar'
 
 export default class UINonSSRBits {
   readonly containerEl = document.createElement('div')
