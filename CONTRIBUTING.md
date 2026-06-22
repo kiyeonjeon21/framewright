@@ -4,7 +4,8 @@
 
 ### Setting up the environment
 
-Make sure you have [`node 22+`](https://nodejs.org/) installed (see `.nvmrc`; node 24 LTS recommended):
+Make sure you have [`node 22+`](https://nodejs.org/) installed (see `.nvmrc`;
+node 24 LTS recommended):
 
 ```sh
 $ node -v
